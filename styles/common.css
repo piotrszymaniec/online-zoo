@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
+
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
@@ -13,5 +21,16 @@ nav {
   gap: 58px;
 }
 .design {
-  margin-left: auto;
+  /* margin-left: auto; */
+}
+
+.hero {
+  /* margin-top: -80px; */
+  /* width:100%; */
+  background: url(../images/photo-giant-panda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -80px;
+  min-height:780px;
 }
