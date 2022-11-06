@@ -152,7 +152,7 @@ width: 72.5%
   /* text is 22px, and 16px is base, and rounded is 5px */
   /* for biiiig screens it would have em or % in width is constant*/
   border-radius: 1.375em;
-  border-radius: 22.73%;
+  /* border-radius: 22.73%; */
 
 }
 .rounded-25 {
