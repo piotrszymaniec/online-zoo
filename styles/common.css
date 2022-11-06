@@ -1,0 +1,17 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 58px;
+}
+.design {
+  margin-left: auto;
+}
