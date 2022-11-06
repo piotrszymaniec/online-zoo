@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 
-
+header {
+  position:relative;
+}
 
 .nav-wrapper {
   display: flex;
@@ -31,6 +33,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-position-y: -80px;
+  /* background-position-y: -80px; */
   min-height:780px;
 }
