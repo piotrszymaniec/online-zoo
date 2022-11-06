@@ -1,0 +1,187 @@
+/* colors */
+:root {
+  --frosted-glass-white-color: #FDFDFF;
+  --light-gray-color: #F1F3F2;
+  --gray-smoky-color: #ABABAB;
+  --gray-color: #767474;
+  --pink-gradient-color: #FEBDAB;
+  --orange-gradient-color: #FED290;
+  --orange-color: #F9804B;
+  --dark-orange-color: #E47209;
+  --red-color: #D31414;
+  --yellow-color: #FFEE2E;
+  --green-color: #4B9200;
+  --black-blue-color: #333B41;
+  --input-text: #BDBDBD;
+}
+
+/* fonts */
+
+body {
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 700;
+  /* font-size: 114px; */
+  font-size: 7.125rem;
+}
+
+h2 {
+  /* font-size: 48px; */
+  font-size: 3rem;
+}
+
+h3 {
+  /* font-size: 36px; */
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  /* font-size: 24px; */
+  font-size: 1.5rem;
+}
+
+.btn-font {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.smallParagraph {
+  /* font-size: 15px; */
+  font-size: 0.9375rem;
+  font-weight: 100;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/* icons */
+
+.icon-size-normal {
+  width: 80px;
+  height: 80px;
+}
+.icon-size-medium {
+  width: 52px;
+  height: 52px;
+}
+
+/* controls */
+
+/*
+w: 298, padding: 16 70
+padding 1em 4.375em
+*/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange-color);
+}
+
+.link-active {
+  /* to set currently visited subpage in menu breadcrumbs */
+  color: var(--orange-color);
+}
+a:active {
+  color: var(--orange-color);
+}
+
+
+
+button {
+  /* centered text horizontally and verticaly: how?*/
+  background-color: var(--orange-color);
+  color: white;
+}
+
+button.wide {
+  width:298px;
+}
+
+input[type="submit"] {
+  background-color: var(--gray-color);
+  color: var(--input-text);
+}
+input[type="text"] {
+  color: var(--input-text);
+  border-color: var(--orange-color);
+}
+/* jak tu opisac active*/
+/* .button-text-color {
+  color: var(--frosted-glass-white-color);
+} */
+.hover {
+  background-color: var(--dark-orange-color);
+}
+.active {
+  background-color: var(--green-color);
+}
+.disabled {
+  background-color: var(--gray-color);
+}
+
+/* input text*/
+.input-default {
+  border: 1px solid
+}
+.mistake {
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+/* nav bar and sections container size*/
+/*
+(1600 - 440)
+width: 72.5%
+*/
+
+/* misc */
+.rounded-small {
+  /* 2px */
+  /* text is 16px and rounded is 2px */
+  /* should it be in based on text size ? or rather on button width/height?*/
+  border-radius: 0.125em;
+
+}
+.rounded-medium {
+  /* 5px */
+  /* text is 22px, and 16px is base, and rounded is 5px */
+  /* for biiiig screens it would have em or % in width is constant*/
+  border-radius: 1.375em;
+  border-radius: 22.73%;
+
+}
+.rounded-25 {
+  /* half circle */
+  border-radius: 25px;
+  border-radius: 1.5625em;
+  /* 16px */
+
+}
+
+/* layout*/
+
+.centered-2d {
+  /* does it do the job? */
+  text-align: center;
+  line-height: 1em;
+
+}
+
+.wrapper-1160 {
+  /* 1160 */
+  /* width: 72.5%; */
+  width: 1160px;
+}
+
+header, footer {
+  background-color: black;
+}
+
+.centered {
+  margin: 0 auto;
+}
