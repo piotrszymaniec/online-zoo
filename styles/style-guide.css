@@ -100,6 +100,7 @@ button {
   background-image: var(--button-bg);
   color: white;
   line-height: 22.4px;
+  text-transform: uppercase;
 }
 
 button.wide {
