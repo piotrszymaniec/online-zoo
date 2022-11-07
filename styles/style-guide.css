@@ -146,6 +146,23 @@ input[type="text"]:active {
   outline: var(--green-color);
   border-color: var(--green-color);
 }
+input[type="email"] {
+  color: var(--input-text);
+  border: 1px solid var(--orange-color);
+  padding: 10px 0 10px 10px;
+  border-radius: 2px;
+}
+
+input[type="email"]:active {
+  color: var(--green-color);
+  outline: var(--green-color);
+  border-color: var(--green-color);
+}
+input[type="email"]:invalid {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
 
 .hover {
   background-color: var(--dark-orange-color);
@@ -162,6 +179,7 @@ input[type="text"]:active {
   border: 1px solid
 }
 .mistake {
+  outline: var(--red-color);
   color: var(--red-color);
   border-color: var(--red-color);
 }
