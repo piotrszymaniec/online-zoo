@@ -92,7 +92,9 @@ a:active {
   color: var(--orange-color);
 }
 
+label {
 
+}
 
 button {
   /* centered text horizontally and verticaly: how?*/
@@ -186,6 +188,7 @@ width: 72.5%
 
 header, footer {
   background-color: black;
+  color: white;
 }
 
 .centered {
