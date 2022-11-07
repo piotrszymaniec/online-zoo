@@ -1,7 +1,7 @@
 /* colors */
 :root {
   --frosted-glass-white-color: #FDFDFF;
-  --light-gray-color: #F1F3F2;
+  --gray-light-color: #F1F3F2;
   --gray-smoky-color: #ABABAB;
   --gray-color: #767474;
   --pink-gradient-color: #FEBDAB;
@@ -108,8 +108,10 @@ button.wide {
 }
 
 input[type="submit"] {
-  background-color: var(--gray-color);
-  color: var(--input-text);
+  background-color: var(--gray-light-color);
+  color: black;
+  width: 129px;
+  padding: 10px 0;
 }
 input[type="text"] {
   color: var(--input-text);
@@ -155,7 +157,7 @@ width: 72.5%
   /* 5px */
   /* text is 22px, and 16px is base, and rounded is 5px */
   /* for biiiig screens it would have em or % in width is constant*/
-  border-radius: 1.375em;
+  border-radius: 5px;
   /* border-radius: 22.73%; */
 
 }
