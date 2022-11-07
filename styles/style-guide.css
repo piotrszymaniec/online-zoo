@@ -124,7 +124,7 @@ button.wide {
 
 input[type="submit"] {
   background-color: var(--gray-light-color);
-  color: black;
+  /* color: black; */
   width: 129px;
   padding: 10px 0;
 }
