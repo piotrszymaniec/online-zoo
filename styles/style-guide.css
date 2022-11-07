@@ -13,6 +13,7 @@
   --green-color: #4B9200;
   --black-blue-color: #333B41;
   --input-text: #BDBDBD;
+  --button-bg: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
 /* fonts */
@@ -96,6 +97,7 @@ a:active {
 button {
   /* centered text horizontally and verticaly: how?*/
   background-color: var(--orange-color);
+  background-image: var(--button-bg);
   color: white;
   line-height: 22.4px;
 }
