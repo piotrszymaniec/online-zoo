@@ -97,6 +97,7 @@ button {
   /* centered text horizontally and verticaly: how?*/
   background-color: var(--orange-color);
   color: white;
+  line-height: 22.4px;
 }
 
 button.wide {

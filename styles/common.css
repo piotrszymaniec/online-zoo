@@ -46,7 +46,7 @@ nav {
   /* flex-direction: column;
   align-items: flex-end; */
   justify-content: flex-end;
-  margin-top:106px;
+  margin-top:12px;
 }
 
 
@@ -58,23 +58,28 @@ nav {
   line-height: 75%;
   text-align: center;
   z-index: 0;
-  /* margin-top:66px; */
+  padding-top: 7.9%;
 }
 
 .highlighted-text {
   color: #FFEE2E;
 }
-.big-text:before {
+.text-shape-wrapper {
+    display: flex;
+}
+
+.text-shape-wrapper::before {
   content: "";
   width: 465px;
   height: 465px;
-  position: relative;
   background-color: #F9804B;
   border-radius: 100%;
-  z-index: -1;
-  top: 92px;
-  right: 329px;
+  left: 40.7%;
+  position: relative;
 }
+
 .button-watch-container {
   padding-right: 97px;
+  text-align: right;
+  margin-top: 60px;
 }
