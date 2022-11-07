@@ -59,3 +59,35 @@ section.backstage {
   text-align: center;
 }
 
+.pick-a-friend .animal-food-card {
+
+}
+
+.animal-food-card {
+    padding-top: 37px;
+  margin: 0 auto;
+  display: flex;
+  gap:20px;
+}
+
+.animal-food-card .card-header {
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  /* padding: 30px; */
+  width: 284px;
+  gap: 13px;
+  height: 246px;
+}
+
+.card-header__days-donate {
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+.card-header__days-donate .day {
+  font-size: 72px;
+  line-height: 0.8em;
+  font-weight: 500;
+}
