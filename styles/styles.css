@@ -44,3 +44,18 @@ section.backstage {
   color: var(--orange-color);
   margin-bottom: 60px;
 }
+
+.pick-a-friend {
+  background-color: var(--pink-light-color);
+  padding: 40px 92px 62px 92px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pick-a-friend h2 {
+  color: #FE9013;
+  text-align: center;
+}
+
