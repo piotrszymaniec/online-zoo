@@ -1,4 +1,8 @@
 /* colors */
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --frosted-glass-white-color: #FDFDFF;
   --gray-light-color: #F1F3F2;
@@ -21,6 +25,7 @@
 body {
   font-family: 'Roboto';
   font-size: 16px;
+  line-height: 22.4px;
 }
 
 h1 {
@@ -32,6 +37,10 @@ h1 {
 h2 {
   /* font-size: 48px; */
   font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0.41%;
+  font-weight: 400;
+  line-height: 57.6px;
 }
 
 h3 {
@@ -41,7 +50,7 @@ h3 {
 
 .subtitle {
   /* font-size: 24px; */
-  line-height: 28.8px;
+  line-height: 120%;
   font-size: 1.5rem;
 }
 
