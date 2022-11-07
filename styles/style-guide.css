@@ -41,6 +41,7 @@ h3 {
 
 .subtitle {
   /* font-size: 24px; */
+  line-height: 28.8px;
   font-size: 1.5rem;
 }
 
@@ -127,6 +128,12 @@ input[type="submit"] {
   width: 129px;
   padding: 10px 0;
 }
+
+input[type="submit"]:active {
+  color: var(--green-color);
+  border-color: var(--green-color);
+}
+
 input[type="text"] {
   color: var(--input-text);
   border: 1px solid var(--orange-color);
