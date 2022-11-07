@@ -18,3 +18,29 @@ section.backstage {
   margin-bottom: 34px;
 
 }
+
+.donation-content {
+  background-image: var(--bg-orange-gradient);
+  padding: 40px 0 180px;
+}
+
+.hero-donate {
+  background: url(../images/bg-donation-panda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 390px;
+}
+
+.donation-content > div > p {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.donation-content > div > h3:nth-child(1) {
+  color: white;
+}
+.donation-content > div > h3:nth-child(3) {
+  color: var(--orange-color);
+  margin-bottom: 60px;
+}
