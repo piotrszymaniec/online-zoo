@@ -121,10 +121,13 @@ input[type="text"] {
   padding: 10px 0 10px 10px;
   border-radius: 2px;
 }
-/* jak tu opisac active*/
-/* .button-text-color {
-  color: var(--frosted-glass-white-color);
-} */
+
+input[type="text"]:active {
+  color: var(--green-color);
+  outline: var(--green-color);
+  border-color: var(--green-color);
+}
+
 .hover {
   background-color: var(--dark-orange-color);
 }
