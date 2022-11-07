@@ -91,3 +91,30 @@ section.backstage {
   line-height: 0.8em;
   font-weight: 500;
 }
+.payment-form {
+  display: flex;
+  flex-direction: column;
+}
+.picker-widget {
+  background-color: #404950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  height: 27px;
+  margin: 20px 0
+}
+.picker-widget-amount {
+  display: flex;
+  gap: 73px;
+}
+.picker-widget-amount span {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.4em;
+}
+
+.pick-amount {
+  display: flex;
+  gap: 50px;
+}
