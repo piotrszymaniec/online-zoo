@@ -9,6 +9,7 @@
   --gray-smoky-color: #ABABAB;
   --gray-color: #767474;
   --pink-gradient-color: #FEBDAB;
+  --pink-light-color: #fde5d7;
   --orange-gradient-color: #FED290;
   --orange-color: #F9804B;
   --dark-orange-color: #E47209;
@@ -18,6 +19,7 @@
   --black-blue-color: #333B41;
   --input-text: #BDBDBD;
   --button-bg: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  --bg-orange-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
 /* fonts */
@@ -45,7 +47,10 @@ h2 {
 
 h3 {
   /* font-size: 36px; */
+  font-weight: 400;
   font-size: 2.25rem;
+  line-height: 46.8px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
