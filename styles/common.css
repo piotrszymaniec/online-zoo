@@ -40,6 +40,13 @@ nav {
   min-height:780px;
 }
 
+.hero-donate {
+  background: url(../images/photo-giant-panda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 390px;
+}
 
 .wrapper-watch {
   display: flex;
