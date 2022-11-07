@@ -1,0 +1,153 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+header {
+  position:relative;
+    height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 58px;
+}
+.design {
+  /* margin-left: auto; */
+}
+
+.hero {
+  /* margin-top: -80px; */
+  /* width:100%; */
+  background: url(../images/photo-giant-panda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-position-y: -80px; */
+  min-height:780px;
+}
+
+.wrapper-watch {
+  display: flex;
+  /* flex-direction: column;
+  align-items: flex-end; */
+  justify-content: flex-end;
+  margin-top:12px;
+}
+
+
+.big-text {
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 106px;
+  line-height: 75%;
+  text-align: center;
+  z-index: 0;
+  padding-top: 7.9%;
+}
+
+.highlighted-text {
+  color: #FFEE2E;
+}
+.text-shape-wrapper {
+    display: flex;
+}
+
+.text-shape-wrapper::before {
+  content: "";
+  width: 465px;
+  height: 465px;
+  background-color: #F9804B;
+  border-radius: 100%;
+  left: 40.7%;
+  position: relative;
+}
+
+.button-watch-container {
+  padding-right: 97px;
+  text-align: right;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display:flex;
+  padding: 40px 0 50px 0;
+  justify-content: space-between;
+}
+
+.menu-container {
+  display: flex;
+  align-items: flex-end;
+  width: 366px;
+}
+.left-footer-container {
+
+}
+.left-footer-container button {
+  margin: 68px 0 44px;
+
+}
+.right-footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  gap: 13px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+}
+.social-icon {
+  margin-right:12px;
+}
+
+.social-link:active{
+   color: #4B9200;
+}
+.social-icon:active {
+background-color: #4B9200;
+}
+.social-link:hover {
+  color:white;
+}
+.right-footer-container {
+  display: flex;
+  width: 367px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.subscribe input[type="email"]  {
+  background-color: black;
+}
+.subscribe {
+  width: 327px;
+}
+
+.designed-by {
+  text-align: right;
+}
+.designed-by:hover {
+  color:#4B9200;
+}

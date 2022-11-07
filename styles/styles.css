@@ -1,0 +1,157 @@
+section.backstage {
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.backstage-container {
+  display: flex;
+  gap: 87px;
+  margin-top: 40px;
+}
+.backstage-container h2 {
+  margin-bottom: 4.41%;
+}
+
+.backstage-container .content .subtitle {
+  display: block;
+  margin-top:50px;
+  margin-bottom: 34px;
+
+}
+
+.donation-content {
+  background-image: var(--bg-orange-gradient);
+  padding: 40px 0 180px;
+}
+
+.hero-donate {
+  background: url(../images/bg-donation-panda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 390px;
+}
+
+.donation-content > div > p {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.donation-content > div > h3:nth-child(1) {
+  color: white;
+}
+.donation-content > div > h3:nth-child(3) {
+  color: var(--orange-color);
+  margin-bottom: 60px;
+}
+
+.pick-a-friend {
+  background-color: var(--pink-light-color);
+  padding: 40px 92px 62px 92px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pick-a-friend h2 {
+  color: #FE9013;
+  text-align: center;
+}
+
+.pick-a-friend .animal-food-card {
+
+}
+
+.animal-food-card {
+    padding-top: 37px;
+  margin: 0 auto;
+  display: flex;
+  gap:20px;
+}
+
+.animal-food-card .card-header {
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  /* padding: 30px; */
+  width: 284px;
+  gap: 13px;
+  height: 246px;
+}
+
+.card-header__days-donate {
+  display: flex;
+  flex-direction: column;
+  gap:20px
+}
+.card-header__days-donate .day {
+  font-size: 72px;
+  line-height: 0.8em;
+  font-weight: 500;
+}
+.payment-form  {
+  display: flex;
+  width:301px;
+  flex-direction: column;
+  justify-content: center;
+}
+.picker-widget {
+  background-color: #404950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  height: 27px;
+  margin: 20px 0
+}
+.picker-widget-amount {
+  display: flex;
+  gap: 73px;
+}
+.picker-widget-amount span {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.4em;
+}
+
+.pick-amount {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 31px;
+}
+
+.pick-amount > div >input {
+  accent-color: orange;
+}
+
+button[type="submit"].donation {
+  width: 297px;
+  padding: 10px 0;
+  border: 1px solid   var(--orange-color);
+  padding: 16px 0;
+  padding-left:9px;
+}
+
+button.donation {
+  /* centered text horizontally and verticaly: how?*/
+  background-color: var(--orange-color);
+  background-image: var(--button-bg);
+  color: white;
+  line-height: 22.4px;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+}
+
+input.payment {
+  padding: 16px 0;
+  padding-left: 9px;
+  background: none;
+  color: #929699;
+}
+
+.picked {
+  color: orange;
+}
