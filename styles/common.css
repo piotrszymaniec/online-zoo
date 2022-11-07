@@ -139,13 +139,16 @@ background-color: #4B9200;
 }
 
 
-.subscribe input[type="text"]  {
+.subscribe input[type="email"]  {
   background-color: black;
 }
 .subscribe {
   width: 327px;
 }
 
+.designed-by {
+  text-align: right;
+}
 .designed-by:hover {
   color:#4B9200;
 }
