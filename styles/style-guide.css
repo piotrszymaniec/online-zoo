@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --frosted-glass-white-color: #FDFDFF;
   --gray-light-color: #F1F3F2;
@@ -69,15 +70,18 @@ h3 {
   font-size: 0.9375rem;
   font-weight: 100;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 /* icons */
 
 .icon-size-normal {
   width: 80px;
   height: 80px;
 }
+
 .icon-size-medium {
   width: 52px;
   height: 52px;
@@ -103,13 +107,12 @@ a:hover {
   /* to set currently visited subpage in menu breadcrumbs */
   color: var(--orange-color);
 }
+
 a:active {
   color: var(--orange-color);
 }
 
-label {
-
-}
+label {}
 
 button {
   /* centered text horizontally and verticaly: how?*/
@@ -133,7 +136,7 @@ button:disabled {
 }
 
 button.wide {
-  width:298px;
+  width: 298px;
 }
 
 button[type="submit"] {
@@ -149,8 +152,9 @@ button[type="submit"] {
 button[type="submit"]:active {
   outline: var(--green-color);
   color: var(--green-color);
-  border:1px solid var(--green-color);
+  border: 1px solid var(--green-color);
 }
+
 button[type="submit"].mistake {
   outline: var(--red-color);
   color: var(--red-color);
@@ -169,6 +173,7 @@ input[type="text"]:active {
   outline: var(--green-color);
   border-color: var(--green-color);
 }
+
 input[type="email"] {
   color: var(--input-text);
   border: 1px solid var(--orange-color);
@@ -181,6 +186,7 @@ input[type="email"]:active {
   outline: var(--green-color);
   border-color: var(--green-color);
 }
+
 input[type="email"]:invalid {
   outline: var(--red-color);
   color: var(--red-color);
@@ -190,9 +196,11 @@ input[type="email"]:invalid {
 .hover {
   background-color: var(--dark-orange-color);
 }
+
 .active {
   background-color: var(--green-color);
 }
+
 .disabled {
   background-color: var(--gray-color);
 }
@@ -207,6 +215,7 @@ input[type="email"]:invalid {
   color: var(--red-color);
   border-color: var(--red-color);
 }
+
 /* nav bar and sections container size*/
 /*
 (1600 - 440)
@@ -221,6 +230,7 @@ width: 72.5%
   border-radius: 0.125em;
 
 }
+
 .rounded-medium {
   /* 5px */
   /* text is 22px, and 16px is base, and rounded is 5px */
@@ -229,6 +239,7 @@ width: 72.5%
   /* border-radius: 22.73%; */
 
 }
+
 .rounded-25 {
   /* half circle */
   border-radius: 25px;
@@ -249,10 +260,11 @@ width: 72.5%
 .wrapper-1160 {
   /* 1160 */
   /* width: 72.5%; */
-  width: 1160px;
+  max-width: 1160px;
 }
 
-header, footer {
+header,
+footer {
   background-color: black;
   color: white;
 }
