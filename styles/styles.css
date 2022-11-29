@@ -155,3 +155,15 @@ input.payment {
 .picked {
   color: orange;
 }
+.picked img {
+
+}
+
+.payment-form form {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#month {
+
+}
