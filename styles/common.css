@@ -1,10 +1,12 @@
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 header {
-  position:relative;
-    height: 80px;
+  position: relative;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -25,6 +27,7 @@ nav {
   display: flex;
   gap: 58px;
 }
+
 .design {
   /* margin-left: auto; */
 }
@@ -35,9 +38,8 @@ nav {
   background: url(../images/photo-giant-panda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  /* background-position-y: -80px; */
-  min-height:780px;
+  background-position: top -35px center;
+  min-height: 700px;
 }
 
 .wrapper-watch {
@@ -45,7 +47,7 @@ nav {
   /* flex-direction: column;
   align-items: flex-end; */
   justify-content: flex-end;
-  margin-top:12px;
+  padding-top: 12px;
 }
 
 
@@ -63,8 +65,9 @@ nav {
 .highlighted-text {
   color: #FFEE2E;
 }
+
 .text-shape-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .text-shape-wrapper::before {
@@ -84,7 +87,7 @@ nav {
 }
 
 .footer-container {
-  display:flex;
+  display: flex;
   padding: 40px 0 50px 0;
   justify-content: space-between;
 }
@@ -94,18 +97,20 @@ nav {
   align-items: flex-end;
   width: 366px;
 }
-.left-footer-container {
 
-}
+.left-footer-container {}
+
 .left-footer-container button {
   margin: 68px 0 44px;
 
 }
+
 .right-footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .social-media {
   display: flex;
   flex-direction: column;
@@ -113,23 +118,28 @@ nav {
   align-items: flex-start;
   gap: 13px;
 }
+
 .social-link {
   display: flex;
   align-items: center;
 }
+
 .social-icon {
-  margin-right:12px;
+  margin-right: 12px;
 }
 
-.social-link:active{
-   color: #4B9200;
+.social-link:active {
+  color: #4B9200;
 }
+
 .social-icon:active {
-background-color: #4B9200;
+  background-color: #4B9200;
 }
+
 .social-link:hover {
-  color:white;
+  color: white;
 }
+
 .right-footer-container {
   display: flex;
   width: 367px;
@@ -138,9 +148,10 @@ background-color: #4B9200;
 }
 
 
-.subscribe input[type="email"]  {
+.subscribe input[type="email"] {
   background-color: black;
 }
+
 .subscribe {
   width: 327px;
 }
@@ -148,6 +159,7 @@ background-color: #4B9200;
 .designed-by {
   text-align: right;
 }
+
 .designed-by:hover {
-  color:#4B9200;
+  color: #4B9200;
 }
