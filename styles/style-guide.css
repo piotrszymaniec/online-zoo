@@ -21,6 +21,13 @@
   --input-text: #BDBDBD;
   --button-bg: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   --bg-orange-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  --border-pink: radial-gradient(circle at 100% 100%, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 0% 0%/20px 20px no-repeat,
+    radial-gradient(circle at 0 100%, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 100% 0%/20px 20px no-repeat,
+    radial-gradient(circle at 100% 0, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 0% 100%/20px 20px no-repeat,
+    radial-gradient(circle at 0 0, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 100% 100%/20px 20px no-repeat,
+    linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 4px) calc(100% - 40px) no-repeat,
+    linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 40px) calc(100% - 4px) no-repeat,
+    linear-gradient(130deg, #dadedc 26%, #f3a9f8 66%, #fed6ab 100%) no-repeat;
 }
 
 /* fonts */
@@ -69,6 +76,7 @@ h3 {
   /* font-size: 15px; */
   font-size: 0.9375rem;
   font-weight: 100;
+  line-height: 120%;
 }
 
 .uppercase {

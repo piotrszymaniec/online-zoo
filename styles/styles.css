@@ -94,28 +94,28 @@ section.pets {
   gap: 30px;
 }
 
-.card {
+.pet-card {
   width: 365px;
   border: 1px solid #FA6F32;
   border-radius: 5px;
 }
 
-.card-image {
+.pet-card .card-image {
   overflow: hidden;
 }
 
-.card-image img {
+.pet-card .card-image img {
   width: 365px;
   height: 365px;
   background-color: gray;
 }
 
-.card-image img:hover {
+.pet-card .card-image img:hover {
   transform: scale(1.2);
   transition: all .5s;
 }
 
-.card-footer {
+.pet-card .card-footer {
   /* height: 60px; */
   height: 53px;
   display: flex;
@@ -123,24 +123,24 @@ section.pets {
   /* align-items: center; */
 }
 
-.card-icon {
+.pet-card .card-footer .card-icon {
   padding-right: 12px;
 }
 
-.card-content {
+.pet-card .card-footer .card-content {
   padding-left: 16px;
   /* padding-top: 8px;
   padding-bottom: 14px; */
 }
 
-.card-title {
+.pet-card .card-footer .card-content .card-title {
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
 }
 
 
-.card-decription {
+.pet-card .card-footer .card-content .card-decription {
   line-height: 100%;
   letter-spacing: -0.5px;
   font-size: 15px;
@@ -194,7 +194,7 @@ section.pick-a-friend {
   height: 835px;
 }
 
-.title {
+.pick-a-friend-container .title {
   font-size: 48px;
   text-align: center;
   color: #FE9013;
@@ -241,7 +241,71 @@ section.pick-a-friend {
 }
 
 section.testimonials {
-  height: 919px;
+  /* height: 919px; */
+  margin-top: 140px;
+}
+
+section.testimonials .container {
+  text-align: center;
+
+}
+
+.testimonials .testimonial-cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 32px;
+}
+
+.testimonials .testimonial-card {
+  width: 268px;
+  text-align: left;
+  padding: 10px 16px 19px 16px;
+  border-radius: 20px;
+  background-color: var(--gray-light-color);
+  /* border: 2px solid; */
+  background: var(--border-pink);
+}
+
+.testimonial-card {
+  background-color: #F1F3F2;
+}
+
+.testimonial-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-card .card-header .name {
+  font-weight: 500;
+}
+
+.testimonial-card .card-header .location,
+.testimonial-card .card-header .date {
+  color: #BDBDBD;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.testimonial-card .card-header .date::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.testimonial-card .card-header .avatar {
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+
+.testimonial-card .card-header .content {
+  line-height: 110%;
+}
+
+.testimonial-card .card-content {
+  text-align: left;
+  padding-top: 10px;
+  font-size: 15px;
 }
 
 /* dontation page*/
