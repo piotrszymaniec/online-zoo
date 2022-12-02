@@ -175,17 +175,7 @@ input[type="email"] {
 }
 
 /* layout*/
-
-.centered-2d {
-  /* does it do the job? */
-  text-align: center;
-  line-height: 1em;
-
-}
-
 .wrapper {
-  /* 1160 */
-  /* width: 72.5%; */
   width: 1160px;
 }
 
@@ -199,6 +189,6 @@ footer {
   color: white;
 }
 
-.centered {
+.center {
   margin: 0 auto;
 }
