@@ -183,6 +183,12 @@ input[type="text"]:active {
   border-color: var(--green-color);
 }
 
+input[type="number"]:active {
+  color: var(--green-color);
+  outline: var(--green-color);
+  border-color: var(--green-color);
+}
+
 input[type="email"] {
   color: var(--input-text);
   border: 1px solid var(--orange-color);

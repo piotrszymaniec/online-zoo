@@ -57,15 +57,15 @@
         <p class="subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</p>
         <div class="animal-food-card">
           <div class="card-header">
-            <div class="card-header__days-donate">
-              <div class="amount">
-                <span class="day">4</span>
-                <img src="images/icons/x-icon.svg" class="icon" alt="cross"></img>
-              </div>
-              <div>
-                <span class="card-header__animal-name">Panda</span> diet for the day.
-              </div>
+
+            <div class="amount">
+              <div class="day">4</div>
+              <div class="animal-name">Panda diet for the day.</div>
             </div>
+            <div class="multiply">
+              <img src="images/icons/x-icon.svg" class="icon" alt="cross">
+            </div>
+
           </div>
           <div class="card-image">
             <img src="./images/card-panda.svg" alt="animal">
@@ -73,7 +73,48 @@
         </div>
         <div class="amount-picker">
           <span>Amount</span>
-          <div class="picker-widget">
+          <div class="picker-widget-belt"></div>
+          <div class="picker-widget2">
+
+            <div class="donation">
+              <input type="radio" id="donate-5000" value="2000" name="donation"/>
+              <label for="donate-5000"><span class="dolar">$</span>5000</label>
+            </div>
+            <div class="donation">
+              <input type="radio" id="donate-2000" value="2000" name="donation"/>
+              <label for="donate-2000"><span class="dolar">$</span>2000</label>
+            </div>
+            <div class="donation">
+              <input type="radio" id="donate-1000" value="1000" name="donation"/>
+              <label for="donate-1000"><span class="dolar">$</span>1000</label>
+            </div>
+
+            <div class="donation">
+              <input type="radio" id="donate-500" value="500" name="donation"/>
+              <label for="donate-500"><span class="dolar">$</span>500</label>
+            </div>
+
+            <div class="donation">
+              <input type="radio" id="donate-250" value="250" name="donation"/>
+              <label for="donate-250"><span class="dolar">$</span>250</label>
+            </div>
+
+            <div class="donation">
+              <input type="radio" id="donate-100" value="100" name="donation"/>
+              <label for="donate-100"><span class="dolar">$</span>100</label>
+            </div>
+
+            <div class="donation">
+              <input type="radio" id="donate-50" value="50" name="donation"/>
+              <label for="donate-50"><span class="dolar">$</span>50</label>
+            </div>
+
+            <div class="donation">
+              <input type="radio" id="donate-25" value="25" name="donation"/>
+              <label for="donate-25"><span class="dolar">$</span>25</label>
+            </div>
+          </div>
+          <!-- <div class="picker-widget">
             <div><img src="images/yellow-circle.png" alt="yellow circle"></div>
             <div><img src="images/yellow-circle.png" alt="yellow circle"></div>
             <div><img src="images/yellow-circle.png" alt="yellow circle"></div>
@@ -84,30 +125,30 @@
             <div><img src="images/yellow-circle.png" alt="yellow circle"></div>
           </div>
           <div class="picker-widget-amount">
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">5000</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">2000</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">1000</span>
-            <span class="picked"><img src="images/dolar_icon.svg" alt="dolar icon">500</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">250</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">100</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">50</span>
-            <span><img src="images/dolar_icon.svg" alt="dolar icon">25</span>
-          </div>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">5000</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">2000</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">1000</span>
+            <span class="picked"><img src="images/icons/dolar_icon.svg" alt="dolar icon">500</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">250</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">100</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">50</span>
+            <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">25</span>
+          </div> -->
         </div>
         <div class="payment-form centered">
           <form>
             <input class="payment with-icon" type="number" placeholder="Another amount" />
             <div class="pick-amount">
               <div>
-                <input type="radio" name="month" id="month">
+                <input type="radio" name="donation" id="month">
                 <label for="month">Monthly</label>
               </div>
               <div>
-                <input type="radio" name="once" id="once">
+                <input type="radio" name="donation" id="once">
                 <label for="once">Once</label>
               </div>
             </div>
-            <button class="donation rounded-small" type="submit">Feed a friend now</button>
+            <button class="donate rounded-25 wide">Feed a friend now</button>
             <p>Share with your friends on social networks</p>
           </form>
         </div>
@@ -141,7 +182,7 @@
       <div class="right-footer-container">
         <div class="subscribe">
           <form>
-            <label class="subtitle" for="email">Subscribe to our news</label>
+            <label class="subtitle" for="email"><span class="dolar">$</span>Subscribe to our news</label>
             <input id="email" type="email" class="mistake" placeholder="Enter your email" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"/>
             <button type="submit" class="rounded-medium mistake">Submit</button>
           </form>
