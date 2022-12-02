@@ -1,7 +1,6 @@
 section.backstage {
   background: url(../images/backgrounds/bg-photo-flower.png) no-repeat;
   background-position: top 12px right -93px;
-
 }
 
 .backstage>div {
@@ -148,7 +147,6 @@ section.pets {
   /* hide beneth image on hover*/
   z-index: -1;
   position: relative;
-
 }
 
 .pet-card .card-footer .card-content {
@@ -161,26 +159,21 @@ section.pets {
   text-align: left;
 }
 
-
 .pet-card .card-footer .card-content .card-decription {
   line-height: 100%;
   letter-spacing: -0.5px;
   font-size: 15px;
 }
 
-
 /* pet-card animation*/
-
-
 .pets>div>button {
   margin-top: 80px;
 }
 
 section.pick-a-friend {
   height: 1004px;
-  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  background: var(--bg-orange-gradient);
 }
-
 
 .pick-a-friend-wrapper {
   padding-top: 69px;
