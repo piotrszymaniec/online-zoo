@@ -348,14 +348,10 @@ section.testimonials .container button {
   background-color: var(--pink-light-color);
 }
 
-.pick-a-friend>div {}
-
 .pick-a-friend h2 {
   color: #FE9013;
   text-align: center;
 }
-
-.pick-a-friend .animal-food-card {}
 
 .animal-food-card {
   padding-top: 37px;
@@ -455,12 +451,8 @@ input.payment {
   color: orange;
 }
 
-.picked img {}
-
 .payment-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-#month {}

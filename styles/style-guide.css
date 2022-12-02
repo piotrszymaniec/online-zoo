@@ -121,8 +121,6 @@ a:active {
   color: var(--orange-color);
 }
 
-label {}
-
 button {
   /* centered text horizontally and verticaly: how?*/
   background-color: var(--orange-color);
