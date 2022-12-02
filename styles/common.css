@@ -131,11 +131,11 @@ nav {
   margin-right: 12px;
 }
 
-.social-link:active {
+a.social-link:active {
   color: #4B9200;
 }
 
-.social-icon:active {
+img.social-icon:active {
   background-color: #4B9200;
 }
 
@@ -165,6 +165,8 @@ nav {
   line-height: 186%;
 }
 
-.designed-by:hover {
+.designed-by:active {
   color: #4B9200;
+  cursor: pointer;
+  text-decoration: underline;
 }

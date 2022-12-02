@@ -130,16 +130,17 @@ button {
   text-transform: uppercase;
 }
 
-button:active {
-  background-color: var(--green-color);
-}
 
 button:hover {
-  background-color: var(--dark-orange-color);
+  background: var(--dark-orange-color);
 }
 
 button:disabled {
-  background-color: #828282;
+  background: #828282;
+}
+
+button:active {
+  background: var(--green-color);
 }
 
 button.wide {
