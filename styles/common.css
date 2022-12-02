@@ -129,18 +129,27 @@ nav {
 
 .social-icon {
   margin-right: 12px;
+  border-radius: 50%;
 }
 
 a.social-link:active {
   color: #4B9200;
 }
 
-img.social-icon:active {
-  background-color: #4B9200;
+a.social-link:active img {
+  background-color: #4B9200
+}
+
+a.social-link:hover img {
+  background-color: var(--orange-color)
+}
+
+img.social-icon {
+  transition: background-color;
 }
 
 .social-link:hover {
-  color: white;
+  color: var(--orange-color);
 }
 
 .right-footer-container {
