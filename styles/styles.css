@@ -152,7 +152,23 @@ section.pick-a-friend {
   padding-bottom: 100px;
 }
 
-.pick-a-friend-container .text-container {}
+.pick-a-friend-container .text-container .subtitle {
+  margin-top: 30px;
+}
+
+.pick-a-friend-container .text-container p:nth-child(3) {
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.pick-a-friend-container .text-container p:nth-child(4) {
+  margin-top: 10px;
+}
+
+.pick-a-friend-container .text-container a {
+  color: black;
+  border-bottom: 1px solid orange;
+}
 
 .pick-a-friend-container {
   background-color: var(--frosted-glass-white-color);
