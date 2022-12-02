@@ -372,13 +372,19 @@ section.testimonials .container button {
   margin-bottom: 60px;
 }
 
-.pick-a-friend {
+.donation-content .pick-a-friend {
   background-color: var(--pink-light-color);
+  border-radius: 20px;
+  padding: 40px 92px 62px 92px;
 }
 
-.pick-a-friend h2 {
+.donation-content .pick-a-friend h2 {
   color: #FE9013;
   text-align: center;
+}
+
+.donation-content .pick-a-friend p {
+  margin-top: 20px;
 }
 
 .animal-food-card {
