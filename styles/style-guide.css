@@ -170,6 +170,9 @@ button[type="submit"].mistake {
   border-color: var(--red-color);
 }
 
+/* button[type="submit"] */
+
+
 input[type="text"] {
   color: var(--input-text);
   border: 1px solid var(--orange-color);
@@ -210,6 +213,17 @@ input[type="email"] {
   border-radius: 2px;
 }
 
+input[type="email"].mistake {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+input[type="text"].mistake {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
 
 .hover {
   background-color: var(--dark-orange-color);
@@ -226,12 +240,6 @@ input[type="email"] {
 /* input text*/
 .input-default {
   border: 1px solid
-}
-
-.mistake {
-  outline: var(--red-color);
-  color: var(--red-color);
-  border-color: var(--red-color);
 }
 
 /* nav bar and sections container size*/
