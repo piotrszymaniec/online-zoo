@@ -482,15 +482,6 @@ button[type="submit"].donation {
   margin-top: 40px;
 }
 
-button.donate {
-  background-color: var(--orange-color);
-  background-image: var(--button-bg);
-  color: white;
-  line-height: 22.4px;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
 .picker-widget-belt {
   width: 100%;
   height: 27px;
