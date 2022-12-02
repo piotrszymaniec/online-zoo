@@ -26,6 +26,8 @@ section.pets {
   background-image: url(../../assets/images/bg-photo-palm.png), url(../../assets/images/bg-photo-strelitzia.png);
   background-position: left 0 bottom 0, right 0 bottom 0;
   background-repeat: no-repeat, no-repeat;
+  /* center button "Choose your favorite" */
+  text-align: center;
 }
 
 .pets-wrapper {
@@ -129,6 +131,9 @@ section.pets {
   font-size: 15px;
 }
 
+.pets>button {
+  margin-top: 80px;
+}
 
 section.pick-a-friend {
   height: 1004px;
