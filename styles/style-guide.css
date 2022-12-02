@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
-  --frosted-glass-white-color: #FDFDFF;
+  --frosted-glass-white-color: rgba(253, 253, 255, 0.53);
   --gray-light-color: #F1F3F2;
   --gray-smoky-color: #ABABAB;
   --gray-color: #767474;
@@ -20,6 +21,14 @@
   --input-text: #BDBDBD;
   --button-bg: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   --bg-orange-gradient: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  --border-pink: radial-gradient(circle at 100% 100%, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 0% 0%/20px 20px no-repeat,
+    radial-gradient(circle at 0 100%, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 100% 0%/20px 20px no-repeat,
+    radial-gradient(circle at 100% 0, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 0% 100%/20px 20px no-repeat,
+    radial-gradient(circle at 0 0, #F1F3F2 0, #F1F3F2 18px, transparent 18px) 100% 100%/20px 20px no-repeat,
+    linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 4px) calc(100% - 40px) no-repeat,
+    linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 40px) calc(100% - 4px) no-repeat,
+    linear-gradient(130deg, #dadedc 26%, #f3a9f8 66%, #fed6ab 100%) no-repeat;
+  /*https: //unused-css.com/tools/border-gradient-generator*/
 }
 
 /* fonts */
@@ -68,16 +77,20 @@ h3 {
   /* font-size: 15px; */
   font-size: 0.9375rem;
   font-weight: 100;
+  line-height: 120%;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 /* icons */
 
 .icon-size-normal {
   width: 80px;
   height: 80px;
 }
+
 .icon-size-medium {
   width: 52px;
   height: 52px;
@@ -103,12 +116,9 @@ a:hover {
   /* to set currently visited subpage in menu breadcrumbs */
   color: var(--orange-color);
 }
+
 a:active {
   color: var(--orange-color);
-}
-
-label {
-
 }
 
 button {
@@ -117,23 +127,25 @@ button {
   background-image: var(--button-bg);
   color: white;
   line-height: 22.4px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
-button:active {
-  background-color: var(--green-color);
-}
 
 button:hover {
-  background-color: var(--dark-orange-color);
+  background: var(--dark-orange-color);
 }
 
 button:disabled {
-  background-color: #828282;
+  background: #828282;
+}
+
+button:active {
+  background: var(--green-color);
 }
 
 button.wide {
-  width:298px;
+  width: 298px;
 }
 
 button[type="submit"] {
@@ -142,20 +154,24 @@ button[type="submit"] {
   text-transform: none;
   color: black;
   width: 129px;
-  padding: 10px 0;
+  padding: 8px 0;
   border: 1px solid black;
 }
 
 button[type="submit"]:active {
   outline: var(--green-color);
   color: var(--green-color);
-  border:1px solid var(--green-color);
+  border: 1px solid var(--green-color);
 }
+
 button[type="submit"].mistake {
   outline: var(--red-color);
   color: var(--red-color);
   border-color: var(--red-color);
 }
+
+/* button[type="submit"] */
+
 
 input[type="text"] {
   color: var(--input-text);
@@ -169,19 +185,41 @@ input[type="text"]:active {
   outline: var(--green-color);
   border-color: var(--green-color);
 }
-input[type="email"] {
-  color: var(--input-text);
-  border: 1px solid var(--orange-color);
-  padding: 10px 0 10px 10px;
-  border-radius: 2px;
+
+input[type="number"]:active {
+  color: var(--green-color);
+  outline: var(--green-color);
+  border-color: var(--green-color);
 }
+
+input[type="email"]:invalid {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+
 
 input[type="email"]:active {
   color: var(--green-color);
   outline: var(--green-color);
   border-color: var(--green-color);
 }
-input[type="email"]:invalid {
+
+input[type="email"] {
+  color: var(--input-text);
+  outline: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  padding: 10px 0 10px 10px;
+  border-radius: 2px;
+}
+
+input[type="email"].mistake {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+input[type="text"].mistake {
   outline: var(--red-color);
   color: var(--red-color);
   border-color: var(--red-color);
@@ -190,9 +228,11 @@ input[type="email"]:invalid {
 .hover {
   background-color: var(--dark-orange-color);
 }
+
 .active {
   background-color: var(--green-color);
 }
+
 .disabled {
   background-color: var(--gray-color);
 }
@@ -202,11 +242,6 @@ input[type="email"]:invalid {
   border: 1px solid
 }
 
-.mistake {
-  outline: var(--red-color);
-  color: var(--red-color);
-  border-color: var(--red-color);
-}
 /* nav bar and sections container size*/
 /*
 (1600 - 440)
@@ -221,6 +256,7 @@ width: 72.5%
   border-radius: 0.125em;
 
 }
+
 .rounded-medium {
   /* 5px */
   /* text is 22px, and 16px is base, and rounded is 5px */
@@ -229,6 +265,7 @@ width: 72.5%
   /* border-radius: 22.73%; */
 
 }
+
 .rounded-25 {
   /* half circle */
   border-radius: 25px;
@@ -252,8 +289,13 @@ width: 72.5%
   width: 1160px;
 }
 
-header, footer {
+header {
   background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: #111115;
   color: white;
 }
 

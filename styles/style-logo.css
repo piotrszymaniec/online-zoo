@@ -1,21 +1,24 @@
 .nav-logo {
   height: 52px;
   width: 82px;
-  margin-right: 63px;
+  margin-right: 26px;
+  margin-left: 6px;
   border-radius: 2px;
   text-align: center;
   border: 1px solid white;
   border-radius: 2px;
-  background-image: url(./../images/logo-bamboo.svg);
+  background-image: url(./../images/icons/logo-bamboo.svg);
   background-repeat: no-repeat;
   background-position: bottom 8px left 8px;
 }
+
 .nav-logo h1 {
   font-size: 19px;
   font-weight: 400;
   margin: 0;
   padding: 4.5px 3.5px;
 }
+
 .nav-logo h1 a:hover {
-  color:white;
+  color: white;
 }
