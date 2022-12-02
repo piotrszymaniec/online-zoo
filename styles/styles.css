@@ -1,4 +1,10 @@
 section.backstage {
+  background: url(../images/backgrounds/bg-photo-flower.png) no-repeat;
+  background-position: top 12px right -93px;
+
+}
+
+.backstage>div {
   padding-top: 100px;
   padding-bottom: 140px;
 }
@@ -23,7 +29,7 @@ section.backstage {
 section.pets {
   height: 1110px;
   margin-top: 90px;
-  background-image: url(../../assets/images/bg-photo-palm.png), url(../../assets/images/bg-photo-strelitzia.png);
+  background-image: url(../images/backgrounds/bg-photo-palm.png), url(../images/backgrounds/bg-photo-strelitzia.png);
   background-position: left 0 bottom 0, right 0 bottom 0;
   background-repeat: no-repeat, no-repeat;
   /* center button "Choose your favorite" */
