@@ -76,7 +76,6 @@ section.backstage {
   display: block;
   margin-top: 50px;
   margin-bottom: 34px;
-
 }
 
 /* Section */
@@ -101,7 +100,6 @@ section.pets {
   gap: 73px;
   align-items: center;
   flex-direction: column;
-
 }
 
 .cards-container {
@@ -126,7 +124,6 @@ section.pets {
   border-radius: 50%;
   width: 62px;
   height: 62px;
-  background-color: #F9804B;
 }
 
 .cards-nav-button:hover,
