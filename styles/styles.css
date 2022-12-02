@@ -1,3 +1,57 @@
+/* Section */
+/* Watch your favourite animal */
+.hero {
+  background: url(../images/backgrounds/photo-giant-panda.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top -35px center;
+  min-height: 700px;
+}
+
+.wrapper-watch {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+
+
+.big-text {
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 106px;
+  line-height: 75%;
+  text-align: center;
+  z-index: 0;
+  padding-top: 7.9%;
+}
+
+.highlighted-text {
+  color: #FFEE2E;
+}
+
+.text-shape-wrapper {
+  display: flex;
+}
+
+.text-shape-wrapper::before {
+  content: "";
+  width: 465px;
+  height: 465px;
+  background-color: #F9804B;
+  border-radius: 100%;
+  left: 40.7%;
+  position: relative;
+}
+
+.button-watch-container {
+  padding-right: 97px;
+  text-align: right;
+  margin-top: 60px;
+}
+
+/* Section */
+/* The Backstage */
 section.backstage {
   background: url(../images/backgrounds/bg-photo-flower.png) no-repeat;
   background-position: top 12px right -93px;
@@ -25,6 +79,8 @@ section.backstage {
 
 }
 
+/* Section */
+/* Pet galleru */
 section.pets {
   height: 1110px;
   margin-top: 100px;
@@ -170,6 +226,8 @@ section.pets {
   margin-top: 80px;
 }
 
+/* Section */
+/* Pick and feed animal */
 section.pick-a-friend {
   height: 1004px;
   background: var(--bg-orange-gradient);
@@ -259,15 +317,16 @@ section.pick-a-friend {
   margin-top: 60px;
 }
 
+/* Section */
+/* Testimonials */
 section.testimonials {
-  /* height: 919px; */
   margin-top: 140px;
   background: url(../images/backgrounds/bg-photo-leaf.png) no-repeat;
   background-position: right 0 bottom -134px;
 }
 
 section.testimonials .container {
-  /* text-align: center; */
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -291,7 +350,6 @@ section.testimonials .container button {
   padding: 10px 16px 19px 16px;
   border-radius: 20px;
   background-color: var(--gray-light-color);
-  /* border: 2px solid; */
   background: var(--border-pink);
 }
 
@@ -337,7 +395,7 @@ section.testimonials .container button {
   font-size: 15px;
 }
 
-/* dontation page*/
+/* Dontation page html*/
 .donation-content {
   background-image: var(--bg-orange-gradient);
   padding: 40px 0 180px;
