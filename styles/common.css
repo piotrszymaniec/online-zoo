@@ -26,6 +26,8 @@ nav {
 .menu {
   display: flex;
   gap: 58px;
+  position: relative;
+  left: 40px;
 }
 
 .design {
@@ -90,6 +92,7 @@ nav {
   display: flex;
   padding: 40px 0 50px 0;
   justify-content: space-between;
+  font-weight: 100;
 }
 
 .menu-container {
@@ -116,7 +119,7 @@ nav {
   flex-direction: column;
   /* justify-content: flex-start; */
   align-items: flex-start;
-  gap: 13px;
+  gap: 10px;
 }
 
 .social-link {
@@ -147,17 +150,19 @@ nav {
   justify-content: space-between;
 }
 
+.subscribe {}
 
 .subscribe input[type="email"] {
-  background-color: black;
+  background-color: transparent;
+  margin-top: 13px;
+  width: 228px;
+  margin-right: 6px;
 }
 
-.subscribe {
-  width: 327px;
-}
 
 .designed-by {
-  text-align: right;
+  font-weight: 100;
+  line-height: 186%;
 }
 
 .designed-by:hover {
