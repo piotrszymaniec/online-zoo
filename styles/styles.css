@@ -243,6 +243,8 @@ section.pick-a-friend {
 section.testimonials {
   /* height: 919px; */
   margin-top: 140px;
+  background: url(../images/backgrounds/bg-photo-leaf.png) no-repeat;
+  background-position: right 0 bottom -134px;
 }
 
 section.testimonials .container {
