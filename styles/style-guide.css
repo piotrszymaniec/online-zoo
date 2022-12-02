@@ -141,12 +141,6 @@ button:not([type="submit"]):active {
   background: var(--green-color);
 }
 
-input[type="email"]:invalid {
-  outline: var(--red-color);
-  color: var(--red-color);
-  border-color: var(--red-color);
-}
-
 input[type="email"] {
   color: var(--input-text);
   outline: var(--orange-color);
@@ -155,9 +149,10 @@ input[type="email"] {
   border-radius: 2px;
 }
 
-/* input text*/
-.input-default {
-  border: 1px solid;
+input[type="email"]:invalid {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
 }
 
 .mistake {
