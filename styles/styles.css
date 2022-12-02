@@ -383,7 +383,7 @@ section.testimonials .container button {
   text-align: center;
 }
 
-.donation-content .pick-a-friend p {
+.donation-content .pick-a-friend>p {
   margin-top: 20px;
 }
 
@@ -409,7 +409,7 @@ section.testimonials .container button {
 .card-header .multiply {
   position: relative;
   top: -13px;
-  left: 12px;
+  left: 8px;
   align-self: center;
 }
 
@@ -417,34 +417,15 @@ section.testimonials .container button {
   font-size: 72px;
   line-height: 0.8em;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .payment-form {
   display: flex;
   width: 301px;
+  gap: 30px;
   flex-direction: column;
   justify-content: center;
-}
-
-.picker-widget {
-  background-color: #404950;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 120px;
-  height: 27px;
-  margin: 20px 0
-}
-
-.picker-widget-amount {
-  display: flex;
-  gap: 73px;
-}
-
-.picker-widget-amount span {
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 1.4em;
 }
 
 .pick-amount {
@@ -492,9 +473,17 @@ button[type="submit"].donation {
   top: 20px;
 }
 
-.picker-widget2 {
+.picker-widget-belt hr {
+  position: relative;
+  border: 1px solid #72828E;
+  top: 11px;
+  margin-left: 23px;
+  margin-right: 34px;
+}
+
+.picker-widget {
   display: flex;
-  gap: 68px;
+  gap: 82px;
   margin-left: 13px;
   position: relative;
   z-index: 1;
@@ -505,6 +494,7 @@ button[type="submit"].donation {
   flex-direction: column;
   align-items: flex-start;
   gap: 22px;
+  position: relative;
 }
 
 .donation.selected label {
@@ -516,9 +506,6 @@ button[type="submit"].donation {
   margin-left: 10px;
 }
 
-/* make the orange marker work
-*/
-
 .donation input[type=radio] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -528,24 +515,33 @@ button[type="submit"].donation {
   height: 10px;
   background-color: var(--yellow-color);
   border-radius: 50%;
+  z-index: 1;
 }
 
-.donation input[type=radio]:checked {
-  background-color: #4b9200;
-  /* background: url(../images/icons/roller_icon.svg) no-repeat; */
-  /* position: relative; */
-  width: 10px;
-  height: 10px;
-  /* width: 40px;
-  height: 40px; */
-  /* top: -20px; */
-  /* border: 1px solid #4b9200; */
+.selected-amount {
+  position: absolute;
+  width: 40px;
+  left: -5px;
+  top: -15px;
+  height: 40px;
+  background: url(../images/icons/roller_icon.svg) no-repeat;
+  z-index: 0;
+  display: none;
+}
+
+.donation input[type=radio]:checked+.selected-amount {
+  display: block;
+}
+
+.donation input[type=radio]:checked+.selected-amount~label {
+  color: var(--orange-color);
 }
 
 .donation label {
   font-weight: 500;
   font-size: 26px;
   line-height: 1.4em;
+  margin-left: -13px;
 }
 
 .donation label .dolar {
@@ -575,14 +571,9 @@ input.payment {
   border: 1px solid #929699;
 }
 
-.picked {
-  color: orange;
-}
-
 .payment-form {
   margin-top: 47px;
 }
-
 
 .payment-form form {
   display: flex;
