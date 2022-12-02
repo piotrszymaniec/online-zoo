@@ -146,11 +146,6 @@ section.pick-a-friend {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
-.title {
-  font-size: 48px;
-  text-align: center;
-  color: #FE9013;
-}
 
 .pick-a-friend-wrapper {
   padding-top: 69px;
@@ -160,14 +155,20 @@ section.pick-a-friend {
 .pick-a-friend-container .text-container {}
 
 .pick-a-friend-container {
-  background-color: white;
+  background-color: var(--frosted-glass-white-color);
   border-radius: 10px;
-  padding: 1px 100px;
+  padding: 41px 57px 59px 99px;
   height: 835px;
 }
 
-.how-it-works-container {
+.title {
+  font-size: 48px;
   text-align: center;
+  color: #FE9013;
+}
+
+.how-it-works-container {
+  /* text-align: center; */
   /* margin-top: 71px; */
   gap: 35px;
   flex-direction: column;
@@ -184,26 +185,13 @@ h3 {
 .pick-cards-container {
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  gap: 31px;
 }
 
-.pick-cards-container .step {
-  width: 168px;
-  height: 244px;
-
+.pick-cards-container .step>img {
+  background-color: white;
 }
-
-.pick-cards-container .arrow {
-
-  padding-top: 20px;
-  width: 130px;
-  height: 244px;
-}
-
-.pick-cards-container .arrow img {
-  margin-top: 50px;
-}
-
 
 section.testimonials {
   height: 919px;
@@ -239,12 +227,9 @@ section.testimonials {
 
 .pick-a-friend {
   background-color: var(--pink-light-color);
-  padding: 40px 92px 62px 92px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
+
+.pick-a-friend>div {}
 
 .pick-a-friend h2 {
   color: #FE9013;
