@@ -189,12 +189,12 @@ input[type="number"]:active {
   border-color: var(--green-color);
 }
 
-input[type="email"] {
-  color: var(--input-text);
-  border: 1px solid var(--orange-color);
-  padding: 10px 0 10px 10px;
-  border-radius: 2px;
+input[type="email"]:invalid {
+  outline: var(--red-color);
+  color: var(--red-color);
+  border-color: var(--red-color);
 }
+
 
 input[type="email"]:active {
   color: var(--green-color);
@@ -202,11 +202,14 @@ input[type="email"]:active {
   border-color: var(--green-color);
 }
 
-input[type="email"]:invalid {
-  outline: var(--red-color);
-  color: var(--red-color);
-  border-color: var(--red-color);
+input[type="email"] {
+  color: var(--input-text);
+  outline: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  padding: 10px 0 10px 10px;
+  border-radius: 2px;
 }
+
 
 .hover {
   background-color: var(--dark-orange-color);
