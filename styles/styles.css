@@ -137,7 +137,7 @@ section.pets {
   font-size: 15px;
 }
 
-.pets>button {
+.pets>div>button {
   margin-top: 80px;
 }
 
