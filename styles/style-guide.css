@@ -28,6 +28,7 @@
     linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 4px) calc(100% - 40px) no-repeat,
     linear-gradient(#F1F3F2, #F1F3F2) 50% 50%/calc(100% - 40px) calc(100% - 4px) no-repeat,
     linear-gradient(130deg, #dadedc 26%, #f3a9f8 66%, #fed6ab 100%) no-repeat;
+  /*https: //unused-css.com/tools/border-gradient-generator*/
 }
 
 /* fonts */

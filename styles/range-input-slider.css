@@ -1,0 +1,120 @@
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* here beginns our slider styling*/
+/* slider*/
+/* https: //css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+.slider input[type=range] {
+  width: 600px;
+  border: 1px solid rgb(201, 201, 201);
+  height: 8px;
+  margin: 0 auto;
+  margin-top: 21px;
+  border-radius: 4px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0px solid #000101;
+  background-color: #F5F7F6;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 6px;
+  width: 116px;
+  border-radius: 3px;
+  background: #fe884f;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #F5F7F6;
+  border-radius: 4px;
+  border: 0px solid #000101;
+}
+
+input[type=range]::-moz-range-thumb {
+  height: 6px;
+  width: 116px;
+  border-radius: 3px;
+  background: #fe884f;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  /* animate: 0.2s; */
+  background: transparent;
+  border-color: transparent;
+  border-width: 0;
+  color: transparent;
+}
+
+/* 
+input[type=range]::-ms-fill-lower {
+  background: #F5F7F6;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #F5F7F6;
+  border: 0px solid #949494;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 6px;
+  width: 116px;
+  border-radius: 3px;
+  background: #fe884f;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #F5F7F6;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #F5F7F6;
+} */
