@@ -79,6 +79,10 @@ section.pets {
   background-color: var(--dark-orange-color);
 }
 
+.cards-nav-button:active {
+  background: var(--green-color);
+}
+
 .cards-nav-left {
   position: absolute;
   left: -82px;
