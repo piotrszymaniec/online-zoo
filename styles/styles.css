@@ -34,7 +34,7 @@
   display: flex;
 }
 
-.text-shape-wrapper::before {
+/* .text-shape-wrapper::before {
   content: "";
   width: 465px;
   height: 465px;
@@ -42,7 +42,7 @@
   border-radius: 100%;
   left: 40.7%;
   position: relative;
-}
+} */
 
 .button-watch-container {
   padding-right: 97px;
@@ -154,6 +154,7 @@ section.pets {
   width: 365px;
   border: 1px solid #FA6F32;
   border-radius: 5px;
+  background-color: white;
 }
 
 .pet-card .card-image {
