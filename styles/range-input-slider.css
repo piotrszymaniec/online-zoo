@@ -30,7 +30,6 @@ input[type=range]::-ms-track {
 /* slider*/
 /* https: //css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
 .slider input[type=range] {
-  width: 600px;
   border: 1px solid rgb(201, 201, 201);
   height: 8px;
   margin: 0 auto;
