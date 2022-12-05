@@ -1,0 +1,67 @@
+/* Header */
+@media (max-width: 640px) {
+  header {
+    height: 34px;
+  }
+}
+
+/* - logo */
+/* ---------- */
+/* --- 1. Hero --- */
+.hero {
+  background: url(../images/backgrounds/photo-giant-panda.webp);
+  background-size: cover;
+  background-position: top center;
+  min-height: 50vw;
+}
+
+.backstage {
+  background-position: top 12px right -105px;
+}
+@media (min-width: 640px) and (max-width: 1500px) {
+  .backstage {
+    background: none !important;
+  }
+}
+
+@media (max-width: 1340px) {
+  .pets .cards-container {
+    gap: 30px;
+  }
+  .pets .cards-navigation {
+    position: relative;
+    width: 365px;
+    margin: 0 auto;
+  }
+  .pets .cards-navigation .cards-nav-left {
+    position: unset;
+    left: unset;
+  }
+  .pets .cards-navigation .cards-nav-right {
+    position: unset;
+    right: unset;
+  }
+}
+@media (max-width: 1340px) and (max-width: 640px) {
+  .pets .cards-navigation {
+    width: unset;
+  }
+}
+
+@media (max-width: 1160px) {
+  .testimonials .testimonial-cards {
+    display: flex;
+    gap: 32px;
+    overflow: hidden;
+    height: 400px;
+    /* align-content: center; */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+  }
+}
+
+.padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}/*# sourceMappingURL=style.css.map */

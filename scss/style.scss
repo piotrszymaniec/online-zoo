@@ -1,0 +1,152 @@
+// @use 'components/card-shift-container/carousel';
+
+// @use 'media';
+
+
+// INDEX.html
+// Sections
+//
+
+/* Header */
+header {
+  @media (max-width: 640px) {
+    height: 34px;
+  }
+}
+
+/* - logo */
+// .nav-logo {
+//   h1 {
+//     font-size: 19px;
+//     font-weight: 400;
+//     padding: 2.5px 0.5px;
+//     line-height: 120%;
+//   }
+// }
+
+/* ---------- */
+
+/* --- 1. Hero --- */
+
+.hero {
+  background: url(../images/backgrounds/photo-giant-panda.webp);
+  background-size: cover;
+  background-position: top center;
+  // TODO becouse now its estimation
+  min-height: calc((1 / 2) * 100vw);
+  // @media () {
+
+  // }
+
+}
+
+
+// 2. Backstage
+
+.backstage {
+  //padding-top: 
+  //140 100 60 104
+  //flower
+  background-position: top 12px right -105px;
+
+  @media (min-width: 640px) and (max-width:1500px) {
+    //backstage flower disappear
+    background: none !important;
+
+  }
+}
+
+// 3. Gallery
+.pets {
+
+  @media (max-width: 1340px) {
+    .cards-container {
+      gap: 30px;
+      // step 2 make bigger space between galery rows
+    }
+
+    //pets gallery arrows move to center
+    // step 1 arrows disapper
+    .cards-navigation {
+      // display: none;
+      position: relative;
+      // step 3 "put" arrows in the middle
+
+      width: 365px;
+      margin: 0 auto;
+
+      .cards-nav-left {
+        position: unset;
+        // margin-right: 221px;
+        left: unset;
+      }
+
+      .cards-nav-right {
+        position: unset;
+        right: unset;
+      }
+    }
+
+    @media (max-width: 640px) {
+
+      //change space between arrows
+      .cards-navigation {
+        width: unset;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+// 4. Pick a friend
+// 5. Testimonial
+.testimonials {
+  @media (max-width: 1160px) {
+    .testimonial-cards {
+      display: flex;
+      gap: 32px;
+      overflow: hidden;
+      height: 400px; //TODO
+      /* align-content: center; */
+      flex-wrap: wrap;
+      /* flex-direction: row; */
+      justify-content: center;
+    }
+  }
+}
+
+// Footer
+
+// DONATION.html
+// Sections
+//
+// Header - menu
+// 1. Hero
+
+// 4. Pick a friend
+// 5. Testimonial
+// Footer
+
+// Section width == 100% 
+//   - background images
+
+//   container width == bp == wrapper
+//     -width and centering content
+
+//       other blocks of code
+//       margins top
+
+//wrappers
+.wrapper {
+  // width: 100%;
+  // padding: 0 30px;
+}
+
+.padding {
+  padding-left: 40px;
+  padding-right: 40px;
+}
