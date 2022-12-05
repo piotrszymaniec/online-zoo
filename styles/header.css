@@ -1,0 +1,54 @@
+header {
+  height: 80px;
+}
+header .burger-menu {
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+header .burger-default {
+  background: rgb(255, 255, 255);
+}
+header .burger-active {
+  background: rgb(255, 196, 0);
+}
+@media (max-width: 640px) {
+  header .nav-logo {
+    border: none;
+    height: 46px;
+    width: 29px;
+    margin-top: 13px;
+    background-position: bottom 19px left -3px;
+  }
+  header .nav-logo h1 {
+    padding: 0;
+    font-size: 12.3px;
+    font-weight: 400;
+    line-height: 14.7px;
+  }
+  header .burger-menu {
+    display: block;
+  }
+  header .menu,
+header .design {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    height: 34px;
+  }
+}
+
+/*
+eventualnie stworz klase Control
+dodaj element na poczatku strony
+*/
+/*
+1. dodaj ikonke burgera
+  - event handler on click
+    - prostokatny div (max-width 320, 640 | height 329) 
+      - linki menu w div
+      - logo svg z pomaranczowym obrysem, przezroczyste lub biale w srodku
+*//*# sourceMappingURL=header.css.map */

@@ -199,7 +199,7 @@ section.pets {
 .pet-card .card-footer .card-icon {
   padding-right: 12px;
   /* hide beneth image on hover*/
-  z-index: -1;
+  /* z-index: -1; */
   position: relative;
 }
 
