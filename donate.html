@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/donate.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <script type="module" src="./js/menu.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +39,8 @@
         <div class="design">
           <a target="_blank" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a>
         </div>
-        <div class="burger-menu burger-default"></div>
+        <div class="burger-menu burger-default"
+          onclick='document.querySelector(".burger-menu").styles.display = "block"'></div>
       </nav>
     </div>
   </header>
@@ -206,6 +209,11 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
+  <script>
+    function showMenu() {
+      document.querySelector(".burger-menu").styles.display = 'block'
+    }
+  </script>
 </body>
 
 </html>

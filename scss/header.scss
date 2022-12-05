@@ -54,6 +54,20 @@ header {
   }
 }
 
+.menu-block {
+  height: 329px;
+  background-color: white;
+
+  @media (max-width: $tablet) {
+    width: 640px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 320px;
+  }
+
+}
+
 /*
 eventualnie stworz klase Control
 dodaj element na poczatku strony

@@ -424,7 +424,11 @@ section.testimonials .container button {
 .donation-content .pick-a-friend {
   background-color: var(--pink-light-color);
   border-radius: 20px;
-  padding: 40px 92px 62px 92px;
+
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 62px;
+  padding-left: 0;
 }
 
 .donation-content .pick-a-friend h2 {
@@ -434,6 +438,7 @@ section.testimonials .container button {
 
 .donation-content .pick-a-friend>p {
   margin-top: 20px;
+  text-align: center;
 }
 
 .animal-food-card {

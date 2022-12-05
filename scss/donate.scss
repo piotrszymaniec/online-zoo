@@ -1,3 +1,4 @@
+// @use "media";
 $wrapper-desktop: 1160px;
 $wrapper-small-desktop: 940px;
 $wrapper-tablet: 600px;
@@ -29,6 +30,10 @@ $p-mobile: 10px;
 
   @media (max-width: 1000px) {
     max-width: $wrapper-small-desktop;
+  }
+
+  @media (max-width: 960px) {
+    max-width: $wrapper-tablet;
   }
 
   @media (min-width:321px) and (max-width:640px) {
@@ -64,38 +69,55 @@ header {
 //     width: 940px;
 //   }
 // }
-//! why not work? :( 
-//! sass copiler had bug
+
 .picker-widget {
   gap: 80px;
   //btw nie mozna tego wciagnac i w nim media q bo nie aplikuje 50px
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1180px) {
 
   .picker-widget {
-    gap: 50px;
-  }
+    gap: 68px;
 
-
-}
-
-//transitions
-//czyli ladne przejscia
-
-header {
-  height: 80px;
-  transition: all 0.5s;
-
-  @media (max-width: $small-desktop) {
-
-    .menu,
-    .design {
+    .donation:first-child {
       display: none;
     }
   }
 
-  @media (max-width: 800px) {
-    height: 34px;
+  @media (max-width: 960px) {
+
+    .picker-widget {
+      gap: 93px;
+
+      .donation {
+
+
+        &:nth-child(-n+3) {
+          display: none;
+
+        }
+      }
+    }
+  }
+
+  //transitions
+  //czyli ladne przejscia
+
+  header {
+    height: 80px;
+    transition: all 0.5s;
+
+    @media (max-width: $small-desktop) {
+
+      .menu,
+      .design {
+        display: none;
+      }
+    }
+
+    @media (max-width: 800px) {
+      height: 34px;
+    }
   }
 }
