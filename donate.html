@@ -10,17 +10,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/button-override.css">
   <link rel="stylesheet" href="./styles/style-guide.css">
   <link rel="stylesheet" href="./styles/common.css">
-  <link rel="stylesheet" href="./styles/style-logo.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/donate.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <script type="module" src="./js/menu.js"></script>
+
 </head>
 
 <body>
 
   <header>
-    <div class="wrapper-1160 centered">
+    <div class="wrapper center">
       <nav>
         <div class="nav-wrapper">
           <div class="nav-logo">
@@ -37,13 +39,15 @@
         <div class="design">
           <a target="_blank" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a>
         </div>
+        <div class="burger-menu burger-default"
+          onclick='document.querySelector(".burger-menu").styles.display = "block"'></div>
       </nav>
     </div>
   </header>
   <section class="hero-donate">
   </section>
   <main class="donation-content">
-    <div class="wrapper-1160 centered">
+    <div class="wrapper center">
       <h3 class="uppercase">The Zoo has officially reopened but we still need your help!</h3>
       <p>Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and
         public and private events cancelled or postponed for additional months. We need you now more than ever to help
@@ -145,7 +149,7 @@
             <span><img src="images/icons/dolar_icon.svg" alt="dolar icon">25</span>
           </div> -->
         </div>
-        <div class="payment-form centered">
+        <div class="payment-form center">
           <form>
             <input class="payment with-icon" type="number" placeholder="Another amount" />
             <div class="pick-amount">
@@ -167,12 +171,12 @@
     </div>
   </main>
   <footer>
-    <div class="wrapper-1160 centered footer-container">
+    <div class="wrapper center footer-container">
       <div class="left-footer-container">
         <div>
           <a href="index.html"><img src="./images/logo_footer.png" alt="petstory text logo"></a>
         </div>
-        <button class="rounded-medium wide">donate for volunteers</button>
+        <button onclick="window.location.href='./donate.html'" class="wide">donate for volunteers</button>
         <nav class="social-media">
           <!-- social-media- -->
           <a class="social-link" href="https://facebook.com"><img class="social-icon" src="./images/icons/social-media-facebook-icon.svg" alt="facebook icon">Facebook</a>
@@ -194,7 +198,7 @@
           <form>
             <label class="subtitle" for="email">Subscribe to our news</label>
             <input id="email" type="email" placeholder="Enter your email"/>
-            <button type="submit" class="rounded-medium">Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         <div class="designed-by">
@@ -205,6 +209,11 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
+  <script>
+    function showMenu() {
+      document.querySelector(".burger-menu").styles.display = 'block'
+    }
+  </script>
 </body>
 
 </html>

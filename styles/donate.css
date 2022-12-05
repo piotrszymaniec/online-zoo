@@ -1,0 +1,87 @@
+.wrapper {
+  max-width: 1160px;
+}
+@media (max-width: 1180px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1160px) {
+  .wrapper {
+    max-width: 1160px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    max-width: 940px;
+  }
+}
+@media (max-width: 960px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+@media (min-width: 321px) and (max-width: 640px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+@media (max-width: 321px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
+
+header {
+  height: 80px;
+}
+@media (max-width: 1000px) {
+  header .menu,
+header .design {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  header {
+    height: 34px;
+  }
+}
+
+.picker-widget {
+  gap: 80px;
+}
+
+@media (max-width: 1180px) {
+  .picker-widget {
+    gap: 68px;
+  }
+  .picker-widget .donation:first-child {
+    display: none;
+  }
+}
+@media (max-width: 1180px) and (max-width: 960px) {
+  .picker-widget {
+    gap: 93px;
+  }
+  .picker-widget .donation:nth-child(-n+3) {
+    display: none;
+  }
+}
+@media (max-width: 1180px) {
+  header {
+    height: 80px;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 1180px) and (max-width: 1000px) {
+  header .menu,
+header .design {
+    display: none;
+  }
+}
+@media (max-width: 1180px) and (max-width: 800px) {
+  header {
+    height: 34px;
+  }
+}/*# sourceMappingURL=donate.css.map */
