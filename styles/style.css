@@ -1,12 +1,62 @@
-/* Header */
-/* - logo */
-/* ---------- */
+/* 1000/960px */
+/* 640px */
+/* 320px */
+.container {
+  max-width: 1160px;
+}
+@media (max-width: 1362px) {
+  .container {
+    max-width: 1160px;
+  }
+  .container.gallery {
+    max-width: 1322px;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 940px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
 /* --- 1. Hero --- */
 .hero {
   background: url(../images/backgrounds/photo-giant-panda.webp);
   background-size: cover;
   background-position: top center;
   min-height: 50vw;
+}
+
+section {
+  padding: 0 30px;
+}
+section .container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+@media (max-width: 1000px) {
+  section .container {
+    max-width: 940px;
+  }
+}
+@media (max-width: 640px) {
+  section .container {
+    max-width: 600px;
+  }
+}
+@media (max-width: 320px) {
+  section .container {
+    max-width: 300px;
+  }
 }
 
 .backstage {

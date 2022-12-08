@@ -1,6 +1,9 @@
 /* 1000/960px */
 /* 640px */
 /* 320px */
+.container {
+  max-width: 1160px;
+}
 @media (max-width: 1362px) {
   .container {
     max-width: 1160px;

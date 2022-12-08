@@ -32,6 +32,7 @@ $m-padding: 0 10px;
 $m-w: 300px;
 
 .container {
+  max-width: $d-w;
 
   @media (max-width: $d-bp) {
 

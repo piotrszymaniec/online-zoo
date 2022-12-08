@@ -1,30 +1,11 @@
 // @use 'components/card-shift-container/carousel';
 
-// @use 'media';
+@import './utils/media';
 
 
 // INDEX.html
 // Sections
 //
-
-/* Header */
-// header {
-//   @media (max-width: 640px) {
-//     height: 34px;
-//   }
-// }
-
-/* - logo */
-// .nav-logo {
-//   h1 {
-//     font-size: 19px;
-//     font-weight: 400;
-//     padding: 2.5px 0.5px;
-//     line-height: 120%;
-//   }
-// }
-
-/* ---------- */
 
 /* --- 1. Hero --- */
 
@@ -34,14 +15,42 @@
   background-position: top center;
   // TODO becouse now its estimation
   min-height: calc((1 / 2) * 100vw);
-  // @media () {
-
-  // }
-
 }
 
-
 // 2. Backstage
+section {
+  .pet {}
+
+  padding: $d-padding;
+
+  .container {
+    margin: 0 auto;
+    max-width: $d-w;
+
+    @media (max-width: $d-bp) {
+
+      &.gallery {
+        // max-width: $d-w-gallery;
+      }
+    }
+
+    @media (max-width: $sd-bp) {
+
+      max-width: $sd-w;
+    }
+
+    @media (max-width: $t-bp) {
+
+      max-width: $t-w;
+    }
+
+    @media (max-width: $m-bp) {
+
+      max-width: $m-w;
+    }
+  }
+
+}
 
 .backstage {
   //padding-top: 
@@ -207,9 +216,4 @@ $desktop_middle_bp: 1160px;
 
 .center {
   margin: 0 0;
-}
-
-.padding {
-  // padding-left: 40px;
-  // padding-right: 40px;
 }
