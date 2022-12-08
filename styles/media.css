@@ -3,7 +3,6 @@
 /* 320px */
 @media (max-width: 1362px) {
   .container {
-    padding: 0 30px;
     max-width: 1160px;
   }
   .container.gallery {
@@ -12,19 +11,16 @@
 }
 @media (max-width: 1000px) {
   .container {
-    padding: 0 30px;
     max-width: 940px;
   }
 }
 @media (max-width: 640px) {
   .container {
-    padding: 0 20px;
     max-width: 600px;
   }
 }
 @media (max-width: 320px) {
   .container {
-    padding: 0 10px;
     max-width: 300px;
   }
 }/*# sourceMappingURL=media.css.map */

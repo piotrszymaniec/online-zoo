@@ -74,7 +74,11 @@ header {
       grid-template-rows: 34px;
       height: 34px;
       grid-template-areas: "logo . burger";
+
       // max-width: $t-w;
+      .logo {
+        border: 0;
+      }
 
       .menu {
         display: none;
@@ -124,19 +128,19 @@ header {
     padding: $t-padding;
 
     &.mobile-menu {
-      border: 1px solid black;
       padding: 10px;
 
       .container {
-        grid-template-columns: 1fr 48px;
-        grid-template-rows: 82px 192px 62px;
+        grid-template-columns: 1fr 28px;
+        grid-template-rows: 82px 167px 39px;
         height: 329px;
         padding: 0;
         grid-template-areas: "logo burger" "menu ." "author .";
 
         .logo {
-          border-color: orange;
+          border-color: 1px solid orange;
           background-image: url(./../images/icons/logo-bamboo-orange.svg);
+          align-self: start;
 
           a h1 {
             color: orange;
@@ -153,7 +157,7 @@ header {
         .design-author {
           display: block;
           justify-self: start;
-          align-self: start;
+          align-self: end;
         }
 
         .burger {

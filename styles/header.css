@@ -3,7 +3,6 @@
 /* 320px */
 @media (max-width: 1362px) {
   .container {
-    padding: 0 30px;
     max-width: 1160px;
   }
   .container.gallery {
@@ -12,19 +11,16 @@
 }
 @media (max-width: 1000px) {
   .container {
-    padding: 0 30px;
     max-width: 940px;
   }
 }
 @media (max-width: 640px) {
   .container {
-    padding: 0 20px;
     max-width: 600px;
   }
 }
 @media (max-width: 320px) {
   .container {
-    padding: 0 10px;
     max-width: 300px;
   }
 }
@@ -93,6 +89,9 @@ header .container .burger .cross-icon {
     height: 34px;
     grid-template-areas: "logo . burger";
   }
+  header .container .logo {
+    border: 0;
+  }
   header .container .menu {
     display: none;
   }
@@ -131,20 +130,20 @@ header .container .burger .cross-icon {
     padding: 0 20px;
   }
   header.mobile-menu {
-    border: 1px solid black;
     padding: 10px;
     background-color: white;
   }
   header.mobile-menu .container {
-    grid-template-columns: 1fr 48px;
-    grid-template-rows: 82px 192px 62px;
+    grid-template-columns: 1fr 28px;
+    grid-template-rows: 82px 167px 39px;
     height: 329px;
     padding: 0;
     grid-template-areas: "logo burger" "menu ." "author .";
   }
   header.mobile-menu .container .logo {
-    border-color: orange;
+    border-color: 1px solid orange;
     background-image: url(./../images/icons/logo-bamboo-orange.svg);
+    align-self: start;
   }
   header.mobile-menu .container .logo a h1 {
     color: orange;
@@ -157,7 +156,7 @@ header .container .burger .cross-icon {
   header.mobile-menu .container .design-author {
     display: block;
     justify-self: start;
-    align-self: start;
+    align-self: end;
   }
   header.mobile-menu .container .burger {
     align-self: start;
