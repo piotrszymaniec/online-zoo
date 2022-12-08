@@ -22,3 +22,14 @@ form.addEventListener("submit", (e) => {
     submit.classList.add("mistake")
   }
 });
+
+function toggleMobileMenu() {
+  const header = document.querySelector("header")
+  header.classList.toggle("mobile-menu")
+  const icon = document.querySelector("header .container .burger")
+  if (header.classList.contains('mobile-menu')) {
+    icon.style.background = 'url(/images/icons/burger-menu-cross.svg) no-repeat';
+  } else {
+    icon.style.background = 'url(/images/icons/burger-menu.svg) no-repeat';
+  }
+}

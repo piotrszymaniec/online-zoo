@@ -14,35 +14,30 @@
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/donate.css">
+  <link rel="stylesheet" href="./styles/logo.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/header.css">
   <script type="module" src="./js/menu.js"></script>
-
 </head>
 
 <body>
-
   <header>
-    <div class="wrapper center">
-      <nav>
-        <div class="nav-wrapper">
-          <div class="nav-logo">
-            <h1><a href="index.html">PetStory online</a></h1>
-          </div>
-          <div class="menu">
-            <a href="index.html">About</a>
-            <a href="#">Map</a>
-            <a href="#">Zoos</a>
-            <a class="link-active" href="donate.html">Donate</a>
-            <a href="#">Contact us</a>
-          </div>
-        </div>
-        <div class="design">
-          <a target="_blank" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a>
-        </div>
-        <div class="burger-menu burger-default"
-          onclick='document.querySelector(".burger-menu").styles.display = "block"'></div>
-      </nav>
-    </div>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><h1>PetStory online</h1></a>
+      </div>
+      <div class="menu">
+        <a href="index.html">About</a>
+        <a href="#">Map</a>
+        <a href="#">Zoos</a>
+        <a class="link-active" href="donate.html">Donate</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="design-author">
+        <a target="_blank" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks">Designed by ©</a>
+      </div>
+      <div class="burger" onclick="toggleMobileMenu()">
+      </div>
   </header>
   <section class="hero-donate">
   </section>
@@ -171,40 +166,39 @@
     </div>
   </main>
   <footer>
-    <div class="wrapper center footer-container">
-      <div class="left-footer-container">
-        <div>
-          <a href="index.html"><img src="./images/logo_footer.png" alt="petstory text logo"></a>
-        </div>
-        <button onclick="window.location.href='./donate.html'" class="wide">donate for volunteers</button>
-        <nav class="social-media">
-          <!-- social-media- -->
-          <a class="social-link" href="https://facebook.com"><img class="social-icon" src="./images/icons/social-media-facebook-icon.svg" alt="facebook icon">Facebook</a>
-          <a class="social-link" href="https://twitter.com"><img class="social-icon" src="./images/icons/social-media-twitter-icon.svg" alt="twitter icon">Twitter</a>
-          <a class="social-link" href="https://instagram.com"><img class="social-icon" src="./images/icons/social-media-instagram-icon.svg" alt="instagram icon">Instagram</a>
-          <a class="social-link" href="https://youtube.com"><img class="social-icon" src="./images/icons/social-media-youtube-icon.svg" alt="youtube icon">Youtube</a>
-        </nav>
+    <div class="container">
+      <div class="item footer-logo">
+        <a class="wider-screen" href="index.html"><img src="./images/logo_footer.png" alt="petstory text logo"></a>
+        <a class="mobile-screen" href="index.html"><img src="./images/logo-footer-mobile.png" alt="petstory text logo"></a>
       </div>
-      <div class="menu-container">
-        <nav class="menu">
-          <a href="index.html">About</a>
-          <a href="#">Map</a>
-          <a href="#">Zoos</a>
-          <a class="link-active" href="donate.html">Donate</a>
-        </nav>
+      <div class="item donate">
+        <button onclick="window.location.href='./donate.html'" class="wide rounded-5">donate for
+          volunteers</button>
       </div>
-      <div class="right-footer-container">
-        <div class="subscribe">
-          <form>
-            <label class="subtitle" for="email">Subscribe to our news</label>
-            <input id="email" type="email" placeholder="Enter your email"/>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-        <div class="designed-by">
-          <div>Designed by Alisa Samborskaya</div>
-          <div>©RSSchool & ©Yem Digital 2021</div>
-        </div>
+      <nav class="item social-media">
+        <ul>
+          <li class="social-link facebook"><a class="social-link" href="https://facebook.com"><a>Facebook</a></li>
+          <li class="social-link twitter"><a href="https://twitter.com">Twitter</a></li>
+          <li class="social-link instagram"><a href="https://instagram.com">Instagram</a></li>
+          <li class="social-link youtube"><a href="https://YouTube.com">YouTube</a></li>
+        </ul>
+      </nav>
+      <nav class="item menu">
+        <a href="index.html">About</a>
+        <a href="#">Map</a>
+        <a href="#">Zoos</a>
+        <a href="donate.html">Contact us</a>
+      </nav>
+      <div class="item subscribe">
+        <form>
+          <label class="subtitle" for="email">Subscribe to our news</label>
+          <input id="email" type="email" placeholder="Enter your email"/>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="item design-author">
+        <div>Designed by Alisa Samborskaya</div>
+        <div>©RSSchool & ©Yem Digital 2021</div>
       </div>
     </div>
   </footer>

@@ -1,0 +1,237 @@
+footer {
+  // width: 100%;
+  margin: 0 auto;
+
+  .container {
+    display: grid;
+    max-width: 1160px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    grid-template-columns: 298px auto 327px;
+    grid-template-rows: 85px 132px 170px;
+    grid-template-areas: "logo . subscribe"
+      "donate_btn . ."
+      "social menu author";
+
+    .footer-logo {
+      grid-area: logo;
+    }
+
+    .footer-logo .mobile-screen {
+      display: none;
+    }
+
+    .donate {
+      grid-area: donate_btn;
+    }
+
+    .social-media {
+      grid-area: social;
+
+      ul {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
+      }
+
+      .social-link {
+        margin-bottom: 10px;
+      }
+
+      .social-link:before {
+        content: '';
+        width: 26px;
+        height: 26px;
+        background-position: right;
+        margin-left: 2px;
+      }
+
+      .facebook::before {
+        background-image: url(/images/icons/social-media-facebook-icon.svg);
+      }
+
+      .twitter::before {
+        background-image: url(/images/icons/social-media-twitter-icon.svg);
+      }
+
+      .instagram::before {
+        background-image: url(/images/icons/social-media-instagram-icon.svg);
+      }
+
+      .youtube::before {
+        background-image: url(/images/icons/social-media-youtube-icon.svg);
+      }
+    }
+
+    .menu {
+      grid-area: menu;
+      align-self: end;
+      display: flex;
+      width: 332px;
+      gap: 48px;
+    }
+
+    .subscribe {
+      grid-area: subscribe;
+
+      form {
+        width: 327px;
+      }
+
+      align-self: start;
+      justify-self: end;
+    }
+
+    .design-author {
+      align-self: end;
+      justify-self: end;
+      grid-area: author;
+      cursor: pointer;
+
+      &:active {
+        color: #4B9200;
+
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: 1220px) {
+      .menu {
+        position: relative;
+        left: -8px;
+
+      }
+    }
+
+    @media (max-width: 1000px) {
+      padding: 40px 30px 50px 30px;
+      max-width: 939px;
+      grid-template-columns: auto auto auto;
+      grid-template-areas: "logo . social"
+        "donate_btn . ."
+        " menu . author";
+
+      .subscribe {
+        display: none;
+      }
+
+      .social-media {
+        justify-self: end;
+        flex-direction: column;
+        height: 170px;
+        // gap: 20px;
+
+        ul li a {
+          display: none;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .menu {
+        position: initial;
+        gap: 48px;
+      }
+    }
+
+    @media (max-width:680px) {
+      padding: 20px 12px;
+      grid-template-rows: 85px 132px 52px;
+
+      .menu {
+        position: inherit;
+        gap: 37px;
+      }
+    }
+
+    @media (max-width:600px) {
+      padding: 20px 12px;
+      row-gap: 20px;
+      grid-template-areas: "logo" "social" "donate_btn" "author" "menu";
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
+
+      .footer-logo,
+      .social-media,
+      .donate,
+      .menu {
+        justify-self: center;
+      }
+
+      .donate button {
+        width: calc(100vw - 20px);
+      }
+
+      .footer-logo {
+        border: 0;
+      }
+
+      .footer-logo .wider-screen {
+        display: none;
+      }
+
+      .footer-logo .mobile-screen {
+        display: block;
+      }
+
+      .social-media {
+        width: 194px;
+        height: auto;
+
+        ul {
+          flex-direction: row;
+
+          justify-content: space-between;
+          gap: clamp(1px, 10px, 30px);
+
+        }
+      }
+
+
+      .menu {
+        position: inherit;
+        gap: 37px;
+      }
+
+      .design-author {
+        justify-self: end;
+      }
+    }
+
+    @media (max-width: 360px) {
+      padding: 10px 5px;
+
+      .menu {
+        gap: 30px;
+        width: unset;
+      }
+    }
+
+    @media (max-width: 306px) {
+      padding: 0 10px;
+
+      .menu {
+        gap: unset;
+
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .design-author {
+        justify-self: unset;
+      }
+    }
+  }
+}

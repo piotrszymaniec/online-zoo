@@ -43,32 +43,9 @@ $p-mobile: 10px;
   }
 
   @media (max-width: 321px) {
-
     max-width: $wrapper-mobile;
   }
 }
-
-header {
-  height: 80px;
-
-  @media (max-width: $small-desktop) {
-
-    .menu,
-    .design {
-      display: none;
-    }
-  }
-
-  @media (max-width: $tablet) {
-    height: 34px;
-  }
-}
-
-// .wrapper {
-//   @media screen and (max-width: 1180px) {
-//     width: 940px;
-//   }
-// }
 
 .picker-widget {
   gap: 80px;
@@ -76,7 +53,6 @@ header {
 }
 
 @media (max-width: 1180px) {
-
   .picker-widget {
     gap: 68px;
 
@@ -91,33 +67,11 @@ header {
       gap: 93px;
 
       .donation {
-
-
         &:nth-child(-n+3) {
           display: none;
 
         }
       }
-    }
-  }
-
-  //transitions
-  //czyli ladne przejscia
-
-  header {
-    height: 80px;
-    transition: all 0.5s;
-
-    @media (max-width: $small-desktop) {
-
-      .menu,
-      .design {
-        display: none;
-      }
-    }
-
-    @media (max-width: 800px) {
-      height: 34px;
     }
   }
 }

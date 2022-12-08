@@ -1,0 +1,191 @@
+footer {
+  margin: 0 auto;
+}
+footer .container {
+  display: grid;
+  max-width: 1160px;
+  padding: 0 30px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  grid-template-columns: 298px auto 327px;
+  grid-template-rows: 85px 132px 170px;
+  grid-template-areas: "logo . subscribe" "donate_btn . ." "social menu author";
+}
+footer .container .footer-logo {
+  grid-area: logo;
+}
+footer .container .footer-logo .mobile-screen {
+  display: none;
+}
+footer .container .donate {
+  grid-area: donate_btn;
+}
+footer .container .social-media {
+  grid-area: social;
+}
+footer .container .social-media ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+footer .container .social-media ul li {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+footer .container .social-media .social-link {
+  margin-bottom: 10px;
+}
+footer .container .social-media .social-link:before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-position: right;
+  margin-left: 2px;
+}
+footer .container .social-media .facebook::before {
+  background-image: url(/images/icons/social-media-facebook-icon.svg);
+}
+footer .container .social-media .twitter::before {
+  background-image: url(/images/icons/social-media-twitter-icon.svg);
+}
+footer .container .social-media .instagram::before {
+  background-image: url(/images/icons/social-media-instagram-icon.svg);
+}
+footer .container .social-media .youtube::before {
+  background-image: url(/images/icons/social-media-youtube-icon.svg);
+}
+footer .container .menu {
+  grid-area: menu;
+  align-self: end;
+  display: flex;
+  width: 332px;
+  gap: 48px;
+}
+footer .container .subscribe {
+  grid-area: subscribe;
+  align-self: start;
+  justify-self: end;
+}
+footer .container .subscribe form {
+  width: 327px;
+}
+footer .container .design-author {
+  align-self: end;
+  justify-self: end;
+  grid-area: author;
+  cursor: pointer;
+}
+footer .container .design-author:active {
+  color: #4B9200;
+  text-decoration: underline;
+}
+@media (max-width: 1220px) {
+  footer .container .menu {
+    position: relative;
+    left: -8px;
+  }
+}
+@media (max-width: 1000px) {
+  footer .container {
+    padding: 40px 30px 50px 30px;
+    max-width: 939px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: "logo . social" "donate_btn . ." " menu . author";
+  }
+  footer .container .subscribe {
+    display: none;
+  }
+  footer .container .social-media {
+    justify-self: end;
+    flex-direction: column;
+    height: 170px;
+  }
+  footer .container .social-media ul li a {
+    display: none;
+  }
+  footer .container .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+  footer .container .menu {
+    position: initial;
+    gap: 48px;
+  }
+}
+@media (max-width: 680px) {
+  footer .container {
+    padding: 20px 12px;
+    grid-template-rows: 85px 132px 52px;
+  }
+  footer .container .menu {
+    position: inherit;
+    gap: 37px;
+  }
+}
+@media (max-width: 600px) {
+  footer .container {
+    padding: 20px 12px;
+    row-gap: 20px;
+    grid-template-areas: "logo" "social" "donate_btn" "author" "menu";
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+  }
+  footer .container .footer-logo,
+footer .container .social-media,
+footer .container .donate,
+footer .container .menu {
+    justify-self: center;
+  }
+  footer .container .donate button {
+    width: calc(100vw - 20px);
+  }
+  footer .container .footer-logo {
+    border: 0;
+  }
+  footer .container .footer-logo .wider-screen {
+    display: none;
+  }
+  footer .container .footer-logo .mobile-screen {
+    display: block;
+  }
+  footer .container .social-media {
+    width: 194px;
+    height: auto;
+  }
+  footer .container .social-media ul {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  footer .container .menu {
+    position: inherit;
+    gap: 37px;
+  }
+  footer .container .design-author {
+    justify-self: end;
+  }
+}
+@media (max-width: 360px) {
+  footer .container {
+    padding: 10px 5px;
+  }
+  footer .container .menu {
+    gap: 30px;
+    width: unset;
+  }
+}
+@media (max-width: 306px) {
+  footer .container {
+    padding: 0 10px;
+  }
+  footer .container .menu {
+    gap: unset;
+    justify-content: space-around;
+    width: 100%;
+  }
+  footer .container .design-author {
+    justify-self: unset;
+  }
+}/*# sourceMappingURL=footer.css.map */

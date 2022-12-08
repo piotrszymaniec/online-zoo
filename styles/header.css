@@ -1,69 +1,179 @@
-header {
-  height: 80px;
+/* 1000/960px */
+/* 640px */
+/* 320px */
+@media (max-width: 1362px) {
+  .container {
+    padding: 0 30px;
+    max-width: 1160px;
+  }
+  .container.gallery {
+    max-width: 1322px;
+  }
 }
-header .burger-menu {
-  margin-left: auto;
-  width: 22px;
-  height: 22px;
+@media (max-width: 1000px) {
+  .container {
+    padding: 0 30px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+    max-width: 600px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding: 0 10px;
+    max-width: 300px;
+  }
+}
+
+header {
+  background-color: #111115;
+  color: white;
+  padding: 0 30px;
+}
+header .container {
+  margin: 0 auto;
+  display: grid;
+  max-width: 1160px;
+  grid-template-columns: 188px 1fr auto;
+  grid-template-rows: 80px;
+  grid-template-areas: "logo menu author";
+}
+header .container .logo {
+  grid-area: logo;
+  align-self: center;
+  border-radius: 2px;
+}
+header .container .menu {
+  grid-area: menu;
+  display: flex;
+  gap: 58px;
+  align-self: center;
+  justify-self: start;
+}
+header .container .design-author {
+  grid-area: author;
+  align-self: center;
+  justify-self: end;
+}
+header .container .burger {
+  grid-area: burger;
+  justify-self: end;
+  align-self: start;
+  display: none;
+  background: url(/images/icons/burger-menu.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+}
+header .container .burger .cross-icon {
   display: none;
 }
-header .burger-default {
-  background: rgb(255, 255, 255);
+@media (max-width: 1362px) {
+  header .container {
+    max-width: 1160px;
+  }
+  header .container.gallery {
+    max-width: 1322px;
+  }
 }
-header .burger-active {
-  background: rgb(255, 196, 0);
+@media (max-width: 1000px) {
+  header .container {
+    max-width: 940px;
+  }
+  header .container .menu {
+    gap: 48px;
+  }
 }
-@media (max-width: 640px) {
-  header .nav-logo {
-    border: none;
-    height: 46px;
-    width: 29px;
-    margin-top: 13px;
-    background-position: bottom 19px left -3px;
+@media (max-width: 880px) {
+  header .container {
+    grid-template-rows: 34px;
+    height: 34px;
+    grid-template-areas: "logo . burger";
   }
-  header .nav-logo h1 {
-    padding: 0;
-    font-size: 12.3px;
-    font-weight: 400;
-    line-height: 14.7px;
-  }
-  header .burger-menu {
-    display: block;
-  }
-  header .menu,
-header .design {
+  header .container .menu {
     display: none;
   }
+  header .container .design-author {
+    display: none;
+  }
+  header .container .burger {
+    cursor: pointer;
+    display: block;
+    align-self: center;
+  }
+  header .container .burger .cross-icon {
+    display: block;
+  }
 }
-@media (max-width: 640px) {
+@media (max-width: 320px) {
+  header .container {
+    max-width: 300px;
+  }
+}
+@media (max-width: 1362px) {
   header {
-    height: 34px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 880px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+  }
+  header.mobile-menu {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+  }
+  header.mobile-menu .container {
+    grid-template-columns: 1fr 48px;
+    grid-template-rows: 82px 192px 62px;
+    height: 329px;
+    padding: 0;
+    grid-template-areas: "logo burger" "menu ." "author .";
+  }
+  header.mobile-menu .container .logo {
+    border-color: orange;
+    background-image: url(./../images/icons/logo-bamboo-orange.svg);
+  }
+  header.mobile-menu .container .logo a h1 {
+    color: orange;
+  }
+  header.mobile-menu .container .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  header.mobile-menu .container .design-author {
+    display: block;
+    justify-self: start;
+    align-self: start;
+  }
+  header.mobile-menu .container .burger {
+    align-self: start;
+    justify-self: start;
+    position: relative;
+  }
+  header.mobile-menu .container a {
+    color: black;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    padding: 0 10px;
   }
 }
 
-.menu-block {
-  height: 329px;
-  background-color: white;
-}
-@media (max-width: 640px) {
-  .menu-block {
-    width: 640px;
-  }
-}
-@media (max-width: 640px) {
-  .menu-block {
-    width: 320px;
-  }
-}
-
-/*
-eventualnie stworz klase Control
-dodaj element na poczatku strony
-*/
-/*
-1. dodaj ikonke burgera
-  - event handler on click
-    - prostokatny div (max-width 320, 640 | height 329) 
-      - linki menu w div
-      - logo svg z pomaranczowym obrysem, przezroczyste lub biale w srodku
-*//*# sourceMappingURL=header.css.map */
+.hidden {
+  display: none;
+}/*# sourceMappingURL=header.css.map */

@@ -1,82 +1,184 @@
-$desktop: 1600px;
-$small-desktop: 1000px;
-$tablet: 640px;
-$mobile: 320px;
+@import './utils/media';
+$black-blue-color: #111115;
+
 
 header {
-  height: 80px;
+  background-color: $black-blue-color;
+  color: white;
+  padding: $d-padding;
 
-  .burger-menu {
-    margin-left: auto;
-    width: 22px;
-    height: 22px;
-    display: none;
 
-  }
+  .container {
+    margin: 0 auto;
+    display: grid;
+    max-width: $d-w;
 
-  .burger-default {
-    background: rgb(255, 255, 255);
-  }
+    grid-template-columns: 188px 1fr auto;
+    grid-template-rows: 80px;
 
-  .burger-active {
-    // background: url(/images/icons/burger-menu-cross.svg);
-    background: rgb(255, 196, 0);
-  }
+    grid-template-areas: "logo menu author";
 
-  @media (max-width: $tablet) {
-    .nav-logo {
-      border: none;
-      height: 46px;
-      width: 29px;
-      margin-top: 13px;
-      background-position: bottom 19px left -3px;
+    .logo {
+      grid-area: logo;
+      align-self: center;
+      border-radius: 2px;
+    }
 
-      h1 {
-        padding: 0;
-        font-size: 12.3px;
-        font-weight: 400;
-        line-height: 14.7px;
+    .menu {
+      grid-area: menu;
+      display: flex;
+      gap: 58px;
+      align-self: center;
+      justify-self: start;
+    }
+
+    .design-author {
+      grid-area: author;
+      align-self: center;
+      justify-self: end;
+    }
+
+    .burger {
+      grid-area: burger;
+
+      justify-self: end;
+      align-self: start;
+      display: none;
+      background: url(/images/icons/burger-menu.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+
+      .cross-icon {
+        display: none;
       }
     }
 
-    .burger-menu {
-      display: block;
+    @media (max-width: $d-bp) {
+      max-width: $d-w;
+
+      &.gallery {
+        max-width: $d-w-gallery;
+      }
     }
 
-    .menu,
-    .design {
-      display: none;
+    @media (max-width: $sd-bp) {
+      .menu {
+        gap: 48px;
+      }
+
+      max-width: $sd-w;
+    }
+
+    // @media (max-width: $t-bp) {
+    @media (max-width: $tb-bp) {
+      grid-template-rows: 34px;
+      height: 34px;
+      grid-template-areas: "logo . burger";
+      // max-width: $t-w;
+
+      .menu {
+        display: none;
+      }
+
+      .design-author {
+        display: none;
+      }
+
+      .burger {
+        cursor: pointer;
+        display: block;
+        align-self: center;
+
+        .cross-icon {
+          display: block;
+        }
+
+        .menu-icon {}
+
+        img {}
+      }
+
+
+    }
+
+    @media (max-width: $m-bp) {
+
+      max-width: $m-w;
     }
   }
 
-  @media (max-width: $tablet) {
-    height: 34px;
+  @media (max-width: $d-bp) {
+    padding: $d-padding;
+
+  }
+
+  @media (max-width: $sd-bp) {
+    padding: $sd-padding;
+
+  }
+
+  // @media (max-width: $t-bp) {
+  @media (max-width: $tb-bp) {
+    position: sticky;
+    top: 0;
+    padding: $t-padding;
+
+    &.mobile-menu {
+      border: 1px solid black;
+      padding: 10px;
+
+      .container {
+        grid-template-columns: 1fr 48px;
+        grid-template-rows: 82px 192px 62px;
+        height: 329px;
+        padding: 0;
+        grid-template-areas: "logo burger" "menu ." "author .";
+
+        .logo {
+          border-color: orange;
+          background-image: url(./../images/icons/logo-bamboo-orange.svg);
+
+          a h1 {
+            color: orange;
+          }
+
+        }
+
+        .menu {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .design-author {
+          display: block;
+          justify-self: start;
+          align-self: start;
+        }
+
+        .burger {
+          align-self: start;
+          justify-self: start;
+          position: relative;
+          // right: 10px;
+          // top: 10px;
+        }
+
+        a {
+          color: black;
+        }
+      }
+
+      background-color: white;
+    }
+
+  }
+
+  @media (max-width: $m-bp) {
+    padding: $m-padding;
   }
 }
 
-.menu-block {
-  height: 329px;
-  background-color: white;
-
-  @media (max-width: $tablet) {
-    width: 640px;
-  }
-
-  @media (max-width: $tablet) {
-    width: 320px;
-  }
-
+.hidden {
+  display: none;
 }
-
-/*
-eventualnie stworz klase Control
-dodaj element na poczatku strony
-*/
-
-/*
-1. dodaj ikonke burgera
-  - event handler on click
-    - prostokatny div (max-width 320, 640 | height 329) 
-      - linki menu w div
-      - logo svg z pomaranczowym obrysem, przezroczyste lub biale w srodku
-*/

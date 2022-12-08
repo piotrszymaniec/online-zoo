@@ -1,0 +1,59 @@
+//  1330px - pet gallery side arrows
+
+// 1160px desktop container guides
+// padding
+$d-bp: 1322px + 40px; //20px each side, a bit space for padding from arrows
+$d-w-gallery: 1322px;
+$d-padding: 0 30px;
+$d-w: 1160px;
+
+// 870px for section testimonials
+// when small desktop 3rd review is getting cut off
+
+/* 1000/960px */
+$sd-bp: 1000px;
+$sd-padding: 0 30px;
+$sd-w: 940px;
+
+// ???  there can be some intermediate value for smooth break
+/* 640px */
+$t-bp: 640px;
+$t-padding: 0 20px;
+$t-w: 600px;
+
+$tb-bp: 880px;
+$tb-padding: 0 20px;
+$tb-w: 800px;
+
+
+/* 320px */
+$m-bp: 320px;
+$m-padding: 0 10px;
+$m-w: 300px;
+
+.container {
+
+  @media (max-width: $d-bp) {
+    padding: $d-padding;
+    max-width: $d-w;
+
+    &.gallery {
+      max-width: $d-w-gallery;
+    }
+  }
+
+  @media (max-width: $sd-bp) {
+    padding: $sd-padding;
+    max-width: $sd-w;
+  }
+
+  @media (max-width: $t-bp) {
+    padding: $t-padding;
+    max-width: $t-w;
+  }
+
+  @media (max-width: $m-bp) {
+    padding: $m-padding;
+    max-width: $m-w;
+  }
+}

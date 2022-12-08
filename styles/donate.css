@@ -33,21 +33,6 @@
   }
 }
 
-header {
-  height: 80px;
-}
-@media (max-width: 1000px) {
-  header .menu,
-header .design {
-    display: none;
-  }
-}
-@media (max-width: 640px) {
-  header {
-    height: 34px;
-  }
-}
-
 .picker-widget {
   gap: 80px;
 }
@@ -66,22 +51,5 @@ header .design {
   }
   .picker-widget .donation:nth-child(-n+3) {
     display: none;
-  }
-}
-@media (max-width: 1180px) {
-  header {
-    height: 80px;
-    transition: all 0.5s;
-  }
-}
-@media (max-width: 1180px) and (max-width: 1000px) {
-  header .menu,
-header .design {
-    display: none;
-  }
-}
-@media (max-width: 1180px) and (max-width: 800px) {
-  header {
-    height: 34px;
   }
 }/*# sourceMappingURL=donate.css.map */
