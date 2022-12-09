@@ -223,7 +223,7 @@
 /* Section */
 /* Pick and feed animal */
 section.pick-a-friend {
-  height: 1004px;
+  /* height: 1004px; */
   background: var(--bg-orange-gradient);
 }
 
@@ -263,7 +263,7 @@ section.pick-a-friend {
   /* padding: 41px 57px 59px 99px; */
   display: flex;
   flex-direction: column;
-  height: 835px;
+  /* height: 835px; */
 }
 
 .pick-a-friend-container .title {
@@ -288,6 +288,29 @@ section.pick-a-friend {
   margin-top: 40px;
 }
 
+@media (max-width:800px) {
+  .pick-cards-container {
+    gap: 42px;
+
+  }
+
+  .pick-cards-container .arrow {
+    display: none;
+  }
+
+}
+
+@media (max-width:320px) {
+  .pick-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    margin-top: 40px;
+  }
+}
+
 .pick-cards-container .step {
   text-align: left;
   width: 168px;
@@ -310,6 +333,7 @@ section.pick-a-friend {
 
 .how-it-works-container button {
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* Section */
@@ -333,6 +357,7 @@ section.testimonials .container button {
   align-self: flex-start;
 }
 
+/* 
 .testimonials .testimonial-cards {
   margin-top: 34px;
   display: flex;
@@ -388,7 +413,7 @@ section.testimonials .container button {
   text-align: left;
   padding-top: 10px;
   font-size: 15px;
-}
+} */
 
 /* Dontation page html*/
 .donation-content {

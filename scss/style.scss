@@ -235,9 +235,12 @@
 //TODO medai 
 $desktop_middle_bp: 1160px;
 
+@import 'components/testimonials';
+
 // 4. Pick a friend
 // 5. Testimonial
 .testimonials {
+
   // .testimonial-cards {
   //   display: flex;
   //   gap: 32px;
@@ -248,26 +251,18 @@ $desktop_middle_bp: 1160px;
   //   /* flex-direction: row; */
   //   justify-content: center;
   // }
-
-  //!!! tymczasowo wyłącz
   //justify-content: center;
   .testimonial-cards {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(4, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // display: flex;
+    // gap: 32px;
 
-    @media (max-width: $desktop_middle_bp) {
-      overflow: hidden;
-      height: 370px; //TODO
-      /* align-content: center; */
-      flex-wrap: wrap;
-      /* flex-direction: row; */
-    }
 
     @media (max-width:1300px) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
-      grid-auto-flow: column;
+      // grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: 1fr;
+      // grid-auto-flow: column;
     }
 
     @media (max-width:990px) {
@@ -277,17 +272,14 @@ $desktop_middle_bp: 1160px;
       .testimonial-card {
         width: 95%;
         height: 109px;
-
         overflow-y: auto;
         text-align: left;
         padding: 10px 16px 19px 16px;
-
-
       }
 
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-auto-rows: auto;
+      // grid-template-columns: 1fr;
+      // grid-template-rows: 1fr 1fr 1fr;
+      // grid-auto-rows: auto;
       // overflow: auto;
     }
 
@@ -307,15 +299,9 @@ $desktop_middle_bp: 1160px;
   //!! ale warto zeby bylo 1160 + jakis padding (ale to szczegol, jest duzo rzeczy ktore musze zrobic przed 20:30)
   // szerobosc 3 to 940
 
-  .slider {
-    width: 600px;
 
-    @media (max-width: 1300px) {
-      width: 398px;
-
-    }
-  }
 }
+
 
 // Footer
 

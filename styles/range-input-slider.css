@@ -29,7 +29,7 @@ input[type=range]::-ms-track {
 /* here beginns our slider styling*/
 /* slider*/
 /* https: //css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
-.slider input[type=range] {
+.testimonial-slider input[type=range] {
   border: 1px solid rgb(201, 201, 201);
   height: 8px;
   margin: 0 auto;

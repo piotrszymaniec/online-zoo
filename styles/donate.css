@@ -1,38 +1,32 @@
 .wrapper {
   max-width: 1160px;
 }
-
 @media (max-width: 1180px) {
   .wrapper {
     max-width: 1000px;
   }
 }
-
 @media (max-width: 1160px) {
   .wrapper {
     max-width: 1160px;
     max-width: 940px;
   }
 }
-
 @media (max-width: 1000px) {
   .wrapper {
     max-width: 940px;
   }
 }
-
 @media (max-width: 960px) {
   .wrapper {
     max-width: 600px;
   }
 }
-
 @media (min-width: 321px) and (max-width: 640px) {
   .wrapper {
     max-width: 600px;
   }
 }
-
 @media (max-width: 321px) {
   .wrapper {
     max-width: 300px;
@@ -47,20 +41,15 @@
   .picker-widget {
     gap: 68px;
   }
-
   .picker-widget .donation:first-child {
     display: none;
   }
 }
-
 @media (max-width: 1180px) and (max-width: 960px) {
   .picker-widget {
     gap: 93px;
   }
-
   .picker-widget .donation:nth-child(-n+3) {
     display: none;
   }
-}
-
-/*# sourceMappingURL=donate.css.map */
+}/*# sourceMappingURL=donate.css.map */

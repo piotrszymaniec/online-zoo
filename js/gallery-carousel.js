@@ -2,70 +2,73 @@ import Control from "./common/control";
 const petsCardsData = [
   {
     name: 'alligators',
-    environment: 'native to southeastern u. s.',
+    description: 'Native to Southeastern U.S.',
     food: 'meat',
-    img: '../images/photo-alligator.webp',
+    img: '/images/photo-alligator.webp',
   },
   {
     name: 'cheetahs',
-    environment: 'native to africa',
+    description: 'Native to Africa',
     food: 'meat',
-    img: '../images/photo-cheetah.webp',
+    img: '/images/photo-cheetah.webp',
   },
   {
     name: 'eagles',
-    environment: 'native to south america',
+    description: 'Native to South america',
     food: 'meat',
-    img: '../images/photo-eagle.webp',
+    img: '/images/photo-eagle.webp',
   },
   {
     name: 'giant pandas',
-    environment: 'native to southwest china',
+    description: 'Native to Southwest China',
     food: 'fruit',
-    img: '../images/photo-panda.webp',
+    img: '/images/photo-panda.webp',
   },
   {
     name: 'gorillas',
-    environment: 'native to congo',
+    description: 'Native to Congo',
     food: 'fruit',
-    img: '../images/photo-gorilla.webp',
+    img: '/images/photo-gorilla.webp',
   },
   {
     name: 'gorillas',
-    environment: 'native to congo',
+    description: 'Native to Congo',
     food: 'fruit',
-    img: '../images/photo-gorilla-2.webp',
+    img: '/images/photo-gorilla-2.webp',
   },
   {
     name: 'two-toed sloth',
-    environment: 'mesoamerica, south america',
+    description: 'Mesoamerica, South America',
     food: 'fruit',
-    img: '../images/photo-two-toed-sloth.webp',
+    img: '/images/photo-two-toed-sloth.webp',
   },
   {
     name: 'penguins',
-    environment: 'native to antarctica',
+    description: 'Native to Antarctica',
     food: 'meat',
-    img: '../images/photo-penguin.webp',
+    img: '/images/photo-penguin.webp',
   },
 ]
-const cardsData = [
-  { name: "animal 00", description: "description", food: "fish" },
-  { name: "animal 01", description: "description", food: "fish" },
-  { name: "animal 02", description: "description", food: "fish" },
-  { name: "animal 03", description: "description", food: "fish" },
-  { name: "animal 04", description: "description", food: "fish" },
-  { name: "animal 05", description: "description", food: "fish" },
-  { name: "animal 06", description: "description", food: "fish" },
-  { name: "animal 07", description: "description", food: "fish" },
-  { name: "animal 08", description: "description", food: "fish" },
-]
 
-function createCard({ name, environment, food }) {
+
+function createCard({ name, description, food }) {
   const parentEl = document.createElement('div');
   const item = new Control(parentEl, 'div', 'card');
   return
 }
-const cardDeck = cardsData.map(dataItem => createCard(dataItem))
+const cardDeck = petsCardsData.map(dataItem => createCard(dataItem))
 
 //clicking button calls a function
+
+class CardView extends Control {
+  constructor(parentEl) {
+    super(parentEl, 'div', 'pet-card')
+  }
+}
+
+class CarouselView extends Control {
+  constructor(parentEl) {
+    super(parentEl, 'div', 'cards-container')
+  }
+
+}

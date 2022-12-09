@@ -1,0 +1,127 @@
+@import '../utils/media.scss';
+
+.testimonials {
+  .title {
+    margin-bottom: 30px;
+
+    @media (max-width: $m-bp) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .slide-container {
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: $desktop_middle_bp) {
+      max-width: 862px;
+    }
+
+    @media (max-width: $sd_bp) {
+      height: 600px;
+    }
+  }
+
+  .testimonial-cards {
+    display: flex;
+    gap: 32px;
+    // overflow: hidden;
+    // width: 100%;
+    //animation
+
+    // position: absolute;
+    transition: transform 1s;
+
+    @media (max-width: $sd_bp) {
+      // overflow: hidden;
+      height: 370px; //TODO
+      flex-direction: column;
+      /* align-content: center; */
+      // flex-wrap: wrap;
+      /* flex-direction: row; */
+    }
+
+    .testimonial-card {
+      width: 266px;
+      height: 391px;
+      width: 239px;
+      height: 365px;
+
+      @media (max-width: $sd_bp) {
+        height: 109px;
+        margin-top: 15px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      width: 236px;
+      //fsmth is bad
+      // display: flex;
+      gap: 32px;
+      flex-shrink: 0; //make all testimonials spread 
+      margin-top: 34px;
+      background-color: var(--gray-light-color);
+      background: var(--border-pink);
+      text-align: left;
+      padding: 10px 15px 19px 15px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .name {
+          font-weight: 500;
+        }
+
+        .location,
+        .date {
+          color: #BDBDBD;
+          font-weight: 100;
+          font-size: 15px;
+        }
+
+        .date {
+          &::before {
+            content: "•";
+            margin-right: 5px;
+          }
+        }
+
+        .avatar {
+          border-radius: 50%;
+          width: 37px;
+          height: 37px;
+        }
+
+        .content {
+          line-height: 110%;
+        }
+      }
+
+      .card-content {
+        text-align: left;
+        padding-top: 10px;
+
+      }
+    }
+  }
+
+  .testimonial-slider {
+    width: 600px;
+
+    @media (max-width: 1300px) {
+      width: 398px;
+
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+
+    }
+  }
+}
