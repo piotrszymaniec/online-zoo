@@ -33,3 +33,33 @@ function toggleMobileMenu() {
     icon.style.background = 'url(/images/icons/burger-menu.svg) no-repeat';
   }
 }
+
+// function pickADonation() {
+
+
+// }
+const selectedCheckbox = document.querySelectorAll(".donation>input")[2]
+selectedCheckbox.checked = true;
+document.querySelector(".payment").value = '1000';
+document.querySelectorAll(".donation>radio").forEach((checkbox, index) => {
+  //sprawdzic liste wszystkich ktore maja ... co?
+  //wpisac zawartosc do value
+  // if (index == 2) {
+  //   checkbox.checked = true;
+  //   document.querySelector(".payment").value = checkbox.value;
+  // ustaw na checked i 
+  // przepisz value do another amount input
+  // }
+  //albo deterministycznie - odrauz ustawic i wpisac z js
+});
+
+document.querySelectorAll(".donation>input").forEach(checkbox => {
+
+  checkbox.addEventListener('click', (checkbox) => {
+    // checkbox.checked = true; 
+    //w sumie to samo sie zrobi poprzez interfejs
+    console.log(document.querySelector(".payment"))
+    document.querySelector(".payment").value = checkbox.value;
+
+  })
+})

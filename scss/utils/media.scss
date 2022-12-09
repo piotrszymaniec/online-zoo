@@ -33,6 +33,7 @@ $m-w: 300px;
 
 .container {
   max-width: $d-w;
+  margin: 0 auto;
 
   @media (max-width: $d-bp) {
 

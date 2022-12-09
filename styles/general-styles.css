@@ -52,7 +52,7 @@
 
 /* Section */
 /* The Backstage */
-section.backstage {
+.backstage {
   background: url(../images/backgrounds/bg-photo-flower.png) no-repeat;
   background-position: top 12px right -93px;
 }
@@ -80,8 +80,8 @@ section.backstage {
 
 /* Section */
 /* Pet galleru */
-section.pets {
-  height: 1110px;
+.pets {
+
   margin-top: 100px;
   background-image: url(../images/backgrounds/bg-photo-palm.png), url(../images/backgrounds/bg-photo-strelitzia.png);
   background-position: left 0 bottom 0, right 0 bottom 0;
@@ -146,10 +146,7 @@ section.pets {
   right: -82px;
 }
 
-.cards-row {
-  display: flex;
-  gap: 30px;
-}
+
 
 .pet-card {
   width: 365px;
@@ -221,9 +218,7 @@ section.pets {
 }
 
 /* pet-card animation*/
-.pets>div>button {
-  margin-top: 80px;
-}
+.pets>div>button {}
 
 /* Section */
 /* Pick and feed animal */
@@ -235,6 +230,7 @@ section.pick-a-friend {
 .pick-a-friend-wrapper {
   padding-top: 69px;
   padding-bottom: 100px;
+
 }
 
 .pick-a-friend-container .text-container {
@@ -427,9 +423,18 @@ section.testimonials .container button {
   border-radius: 20px;
 
   padding-top: 40px;
-  padding-right: 0;
+  padding-right: 92px;
   padding-bottom: 62px;
-  padding-left: 0;
+  padding-left: 92px;
+}
+
+@media (max-width: 1000px) {
+  .donation-content .pick-a-friend {
+    padding-top: 10px;
+    padding-right: 47px;
+    padding-bottom: 40px;
+    padding-left: 47px;
+  }
 }
 
 .donation-content .pick-a-friend h2 {

@@ -124,6 +124,7 @@ header {
   // @media (max-width: $t-bp) {
   @media (max-width: $tb-bp) {
     position: sticky;
+    z-index: 1;
     top: 0;
     padding: $t-padding;
 

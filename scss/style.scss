@@ -18,39 +18,7 @@
 }
 
 // 2. Backstage
-section {
-  .pet {}
 
-  padding: $d-padding;
-
-  .container {
-    margin: 0 auto;
-    max-width: $d-w;
-
-    @media (max-width: $d-bp) {
-
-      &.gallery {
-        // max-width: $d-w-gallery;
-      }
-    }
-
-    @media (max-width: $sd-bp) {
-
-      max-width: $sd-w;
-    }
-
-    @media (max-width: $t-bp) {
-
-      max-width: $t-w;
-    }
-
-    @media (max-width: $m-bp) {
-
-      max-width: $m-w;
-    }
-  }
-
-}
 
 .backstage {
   //padding-top: 
@@ -58,17 +26,90 @@ section {
   //flower
   background-position: top 12px right -105px;
 
-  @media (min-width: 640px) and (max-width:1500px) {
+  @media (max-width: 1250px) {
+    .backstage-container {
+      gap: 31px;
+
+      .content {
+        width: 50%;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: left;
+        width: 455px;
+        height: 408px;
+        // height: 100%;
+
+      }
+
+      @media (max-width:1030px) {
+        img {
+          display: none;
+        }
+
+        .content {
+          width: 70%;
+
+          .subtitle {
+            margin-top: 20px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 740px) and (max-width:1500px) {
     //backstage flower disappear
     background: none !important;
+  }
+
+  @media (max-width: 739px) {
+    //backstage flower disappear
+    background: url(../images/backgrounds/bg-photo-flower.png) no-repeat;
+    background-position: top 12px right -136px;
 
   }
 }
 
 // 3. Gallery
+.pets .gallery .cards-container .cards-row {
+  display: grid;
+
+}
+
+.pets>div>button {
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+
+// -- omnipotence query
 .pets {
-  .cards-row {
-    display: grid;
+  padding: $d-padding;
+
+  div {
+
+    .cards-container {
+      .cards-row {
+        //rules for it and rules for immediate children - cards
+      }
+    }
+
+    .choose-favorite-btn {}
+  }
+}
+
+// -------
+
+.pets {
+  .gallery {
+    button {}
+  }
+
+  .gallery .cards-container .cards-row {
+    display: flex;
+    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
 
@@ -81,8 +122,28 @@ section {
 
     @media (max-width: 1160px) {
       grid-template-columns: repeat(2, 1fr);
+
       grid-auto-flow: column;
+
+      .pet-card {
+        width: 285px;
+        height: 332px;
+
+        .card-image {
+          height: 285px;
+        }
+      }
     }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+  }
+
+  @media (max-width: 1000px) {
+    background-size: 47% 47%;
+
   }
 
   @media (max-width: 1340px) {
@@ -113,18 +174,63 @@ section {
       }
     }
 
-    @media (max-width: 640px) {
-
-      //change space between arrows
-      .cards-navigation {
-        width: unset;
-      }
-    }
   }
 
+  @media (max-width: 800px) {
 
+    //change space between arrows
+    .gallery .cards-container .cards-navigation {
+      width: unset;
+      display: none;
+    }
+
+    .cards-row {
+      flex-direction: column;
+      // grid-template-rows: 1fr 1fr 1fr 1fr;
+      // grid-template-columns: 1fr;
+    }
+  }
 }
 
+@media (max-width: 800px) {
+  body>section.pets>div>div>div.cards-navigation {
+    display: none;
+  }
+}
+
+// .pets {
+
+
+//   padding: $d-padding;
+
+//   .container {
+
+//     max-width: $d-w;
+
+//     @media (max-width: $d-bp) {
+
+//       &.gallery {
+//         // max-width: $d-w-gallery;
+//       }
+//     }
+
+//     @media (max-width: $sd-bp) {
+
+//       max-width: $sd-w;
+//     }
+
+//     @media (max-width: $t-bp) {
+
+//       max-width: $t-w;
+//     }
+
+//     @media (max-width: $m-bp) {
+
+//       max-width: $m-w;
+//     }
+//   }
+
+// }
 
 //TODO medai 
 $desktop_middle_bp: 1160px;
@@ -146,15 +252,43 @@ $desktop_middle_bp: 1160px;
   //!!! tymczasowo wyłącz
   //justify-content: center;
   .testimonial-cards {
-    display: flex;
+    display: grid;
     gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
 
     @media (max-width: $desktop_middle_bp) {
       overflow: hidden;
-      height: 400px; //TODO
+      height: 370px; //TODO
       /* align-content: center; */
       flex-wrap: wrap;
       /* flex-direction: row; */
+    }
+
+    @media (max-width:1300px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-auto-flow: column;
+    }
+
+    @media (max-width:990px) {
+      gap: 15px;
+      height: 357px;
+
+      .testimonial-card {
+        width: 95%;
+        height: 109px;
+
+        overflow-y: auto;
+        text-align: left;
+        padding: 10px 16px 19px 16px;
+
+
+      }
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-rows: auto;
+      // overflow: auto;
     }
 
     @media (max-width: 640px) {
@@ -176,7 +310,7 @@ $desktop_middle_bp: 1160px;
   .slider {
     width: 600px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1300px) {
       width: 398px;
 
     }
