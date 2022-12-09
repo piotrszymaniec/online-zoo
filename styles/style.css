@@ -272,6 +272,7 @@ body {
   .testimonials .testimonial-cards .testimonial-card {
     height: 109px;
     margin-top: 15px;
+    overflow: hidden;
   }
   .testimonials .testimonial-cards .testimonial-card:first-child {
     margin-top: 0;

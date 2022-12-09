@@ -4,9 +4,13 @@
 .container {
   max-width: 1160px;
   margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media (max-width: 1362px) {
   .container {
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 1160px;
   }
   .container.gallery {
@@ -15,16 +19,22 @@
 }
 @media (max-width: 1000px) {
   .container {
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: 940px;
   }
 }
 @media (max-width: 640px) {
   .container {
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 600px;
   }
 }
 @media (max-width: 320px) {
   .container {
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 300px;
   }
 }

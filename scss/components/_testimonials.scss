@@ -50,6 +50,7 @@
       @media (max-width: $sd_bp) {
         height: 109px;
         margin-top: 15px;
+        overflow: hidden;
 
         &:first-child {
           margin-top: 0;
