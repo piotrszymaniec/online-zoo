@@ -44,7 +44,7 @@ header {
       justify-self: end;
       align-self: start;
       display: none;
-      background: url(./images/icons/burger-menu.svg) no-repeat;
+      background: url(../images/icons/burger-menu.svg) no-repeat;
       width: 16px;
       height: 16px;
 
@@ -140,7 +140,7 @@ header {
 
         .logo {
           border-color: 1px solid orange;
-          background-image: url(./../images/icons/logo-bamboo-orange.svg);
+          background-image: url(../images/icons/logo-bamboo-orange.svg);
           align-self: start;
 
           a h1 {

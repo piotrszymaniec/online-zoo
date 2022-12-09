@@ -1,3 +1,31 @@
+$donationCheckboxes = document.querySelectorAll(".donation > input");
+$pickerWidget = document.querySelector(".picker-widget");
+$anotherAmountWidget = document.querySelector(".payment");
+
+
+//set 3rd (1000$) donation as default
+$donationCheckboxes[2].checked = true
+$anotherAmountWidget.value = $donationCheckboxes[2].value;
+
+$donationCheckboxes.forEach(el => el.addEventListener('input', (e) => {
+  const donationValue = e.target.value
+  $anotherAmountWidget.value = donationValue;
+}))
+
+
+$anotherAmountWidget.addEventListener('keyup', (e) => {
+  //check if value matches any amount in donations widget and select apropriate
+  const amountValue = e.target.value
+  const donations = Array.from($donationCheckboxes)
+
+  const arr = donations.filter(el => el.value === amountValue)
+  if (arr.length === 1) {
+    arr[0].checked = true;
+  }
+})
+
+
+
 const form = document.querySelector(".subscribe form");
 form.addEventListener("submit", (e) => {
   e.preventDefault()
@@ -9,9 +37,6 @@ form.addEventListener("submit", (e) => {
     .toLowerCase()
     .match(regexEmail);
 
-
-
-  console.log(isValid(emailCandidate))
 
   if (regexEmail.test(emailCandidate)) {
     console.log(regexEmail.test(emailCandidate));
@@ -33,33 +58,3 @@ function toggleMobileMenu() {
     icon.style.background = 'url(/images/icons/burger-menu.svg) no-repeat';
   }
 }
-
-// function pickADonation() {
-
-
-// }
-const selectedCheckbox = document.querySelectorAll(".donation>input")[2]
-selectedCheckbox.checked = true;
-document.querySelector(".payment").value = '1000';
-document.querySelectorAll(".donation>radio").forEach((checkbox, index) => {
-  //sprawdzic liste wszystkich ktore maja ... co?
-  //wpisac zawartosc do value
-  // if (index == 2) {
-  //   checkbox.checked = true;
-  //   document.querySelector(".payment").value = checkbox.value;
-  // ustaw na checked i 
-  // przepisz value do another amount input
-  // }
-  //albo deterministycznie - odrauz ustawic i wpisac z js
-});
-
-document.querySelectorAll(".donation>input").forEach(checkbox => {
-
-  checkbox.addEventListener('click', (checkbox) => {
-    // checkbox.checked = true; 
-    //w sumie to samo sie zrobi poprzez interfejs
-    console.log(document.querySelector(".payment"))
-    document.querySelector(".payment").value = checkbox.value;
-
-  })
-})
