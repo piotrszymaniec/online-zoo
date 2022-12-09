@@ -27,19 +27,22 @@
 }
 @media (max-width: 640px) {
   .container {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 600px;
   }
 }
 @media (max-width: 320px) {
   .container {
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 300px;
   }
 }
 
 /* --- 1. Hero --- */
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -201,12 +204,15 @@ body {
 }
 @media (max-width: 640px) {
   .container {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     max-width: 600px;
   }
 }
 @media (max-width: 320px) {
   .container {
+    padding-left: 10px;
+    padding-right: 10px;
     max-width: 300px;
   }
 }
