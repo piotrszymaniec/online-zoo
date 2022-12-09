@@ -45,16 +45,16 @@ footer .container .social-media .social-link:before {
   margin-left: 2px;
 }
 footer .container .social-media .facebook::before {
-  background-image: url(/images/icons/social-media-facebook-icon.svg);
+  background-image: url(./images/icons/social-media-facebook-icon.svg);
 }
 footer .container .social-media .twitter::before {
-  background-image: url(/images/icons/social-media-twitter-icon.svg);
+  background-image: url(./images/icons/social-media-twitter-icon.svg);
 }
 footer .container .social-media .instagram::before {
-  background-image: url(/images/icons/social-media-instagram-icon.svg);
+  background-image: url(./images/icons/social-media-instagram-icon.svg);
 }
 footer .container .social-media .youtube::before {
-  background-image: url(/images/icons/social-media-youtube-icon.svg);
+  background-image: url(./images/icons/social-media-youtube-icon.svg);
 }
 footer .container .menu {
   grid-area: menu;

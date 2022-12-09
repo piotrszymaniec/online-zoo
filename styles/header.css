@@ -3,6 +3,7 @@
 /* 320px */
 .container {
   max-width: 1160px;
+  margin: 0 auto;
 }
 @media (max-width: 1362px) {
   .container {
@@ -63,7 +64,7 @@ header .container .burger {
   justify-self: end;
   align-self: start;
   display: none;
-  background: url(/images/icons/burger-menu.svg) no-repeat;
+  background: url(./images/icons/burger-menu.svg) no-repeat;
   width: 16px;
   height: 16px;
 }
