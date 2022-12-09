@@ -31,12 +31,21 @@ $m-bp: 320px;
 $m-padding: 0 10px;
 $m-w: 300px;
 
+$pad-40: 40px;
+$pad-30: 30px;
+$pad-20: 20px;
+$pad-10: 10px;
+
 .container {
   max-width: $d-w;
   margin: 0 auto;
 
-  @media (max-width: $d-bp) {
+  padding-left: $pad-40;
+  padding-right: $pad-40;
 
+  @media (max-width: $d-bp) {
+    padding-left: $pad-30;
+    padding-right: $pad-30;
     max-width: $d-w;
 
     &.gallery {
@@ -45,17 +54,20 @@ $m-w: 300px;
   }
 
   @media (max-width: $sd-bp) {
-
+    padding-left: $pad-30;
+    padding-right: $pad-30;
     max-width: $sd-w;
   }
 
   @media (max-width: $t-bp) {
-
+    padding-left: $pad-20;
+    padding-right: $pad-20;
     max-width: $t-w;
   }
 
   @media (max-width: $m-bp) {
-
+    padding-left: $pad-10;
+    padding-right: $pad-10;
     max-width: $m-w;
   }
 }
