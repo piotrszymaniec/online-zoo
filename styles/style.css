@@ -248,8 +248,6 @@ body {
   .testimonials .testimonial-cards {
     height: 370px;
     flex-direction: column;
-    /* align-content: center; */
-    /* flex-direction: row; */
   }
 }
 .testimonials .testimonial-cards .testimonial-card {
@@ -330,7 +328,6 @@ body {
   .testimonials .testimonial-cards .testimonial-card {
     width: 95%;
     height: 109px;
-    overflow-y: auto;
     text-align: left;
     padding: 10px 16px 19px 16px;
   }

@@ -25,20 +25,12 @@
   .testimonial-cards {
     display: flex;
     gap: 32px;
-    // overflow: hidden;
-    // width: 100%;
-    //animation
-
-    // position: absolute;
     transition: transform 1s;
 
     @media (max-width: $sd_bp) {
       // overflow: hidden;
       height: 370px; //TODO
       flex-direction: column;
-      /* align-content: center; */
-      // flex-wrap: wrap;
-      /* flex-direction: row; */
     }
 
     .testimonial-card {
