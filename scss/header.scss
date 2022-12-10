@@ -56,9 +56,9 @@ header {
     @media (max-width: $d-bp) {
       max-width: $d-w;
 
-      &.gallery {
-        max-width: $d-w-gallery;
-      }
+      // &.gallery {
+      //   max-width: $d-w-gallery;
+      // }
     }
 
     @media (max-width: $sd-bp) {

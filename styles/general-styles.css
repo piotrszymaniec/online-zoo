@@ -102,13 +102,13 @@
   flex-direction: column;
 }
 
-.cards-container {
+/* .cards-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
+} */
 
 .cards-navigation {
   position: absolute;
@@ -149,7 +149,7 @@
 
 
 .pet-card {
-  width: 365px;
+  /* width: 365px; */
   border: 1px solid #FA6F32;
   border-radius: 5px;
   background-color: white;
@@ -160,8 +160,8 @@
 }
 
 .pet-card .card-image img {
-  width: 365px;
-  height: 365px;
+  /* width: 365px;
+  height: 365px; */
   background-color: gray;
 }
 

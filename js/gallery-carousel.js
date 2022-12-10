@@ -101,7 +101,7 @@ function createNewGallery(parentRow1, parentRow2, elementsUniqueArray) {
     });
 }
 
-createNewGallery(rowsNodes[0], rowsNodes[1], cardDeckHtmlElements)
+// createNewGallery(rowsNodes[0], rowsNodes[1], cardDeckHtmlElements)
 
 
 //dodaj karty do rows w kontenerach rzeby mozna bylo przesuwac karty jak w testimonial

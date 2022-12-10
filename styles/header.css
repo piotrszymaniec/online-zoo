@@ -85,9 +85,6 @@ header .container .burger .cross-icon {
   header .container {
     max-width: 1160px;
   }
-  header .container.gallery {
-    max-width: 1322px;
-  }
 }
 @media (max-width: 1000px) {
   header .container {
