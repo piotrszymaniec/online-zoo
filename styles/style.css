@@ -100,9 +100,8 @@ body {
   margin-top: 80px;
 }
 .pets .gallery .cards-container {
-  width: 1158px;
+  width: 960px;
   overflow: hidden;
-  overflow-x: scroll;
   margin: 0 auto;
 }
 @media (max-width: 1320px) {
@@ -154,6 +153,7 @@ body {
 .pets .cards-navigation {
   display: flex;
   position: relative;
+  padding: 10px 0;
 }
 @media (min-width: 1341px) {
   .pets .cards-navigation .card-nav-rigth {
