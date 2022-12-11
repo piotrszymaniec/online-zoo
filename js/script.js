@@ -36,10 +36,6 @@ function toggleMobileMenu() {
 const card = document.querySelectorAll(".testimonial-card")[0]
 const cardContainer = document.querySelector(".testimonial-cards")
 
-function getStyleValue(el, styleProperty) {
-  return window.getComputedStyle(el).getPropertyValue(styleProperty)
-}
-
 const cardWidth = getStyleValue(card, "width").slice(0, -2) //cut 'px' pixels - i dont check for em etc
 const cardGap = getStyleValue(cardContainer, "gap").slice(0, -2)
 const moveCardBy = Number.parseInt(cardWidth) + Number.parseInt(cardGap)
