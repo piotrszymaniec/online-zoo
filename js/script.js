@@ -21,14 +21,16 @@ form.addEventListener("submit", (e) => {
 });
 
 function toggleMobileMenu() {
+  document.querySelector(".overlay").classList.toggle('hidden')
   const header = document.querySelector("header")
   header.classList.toggle("mobile-menu")
   const icon = document.querySelector("header .container .burger")
-  if (header.classList.contains('mobile-menu')) {
-    icon.style.background = 'url(../images/icons/burger-menu-cross.svg) no-repeat';
-  } else {
-    icon.style.background = 'url(../images/icons/burger-menu.svg) no-repeat';
-  }
+  // if (header.classList.contains('mobile-menu')) {
+  icon.classList.toggle('cross-icon')
+  //   icon.style.background = 'url(../images/icons/burger-menu-cross.svg) no-repeat';
+  // } else {
+  //   icon.style.background = 'url(../images/icons/burger-menu.svg) no-repeat';
+  // }
 }
 
 
@@ -51,12 +53,3 @@ if (slider) {
   slider.addEventListener('input', moveCards)
 }
 
-//!!! important to be equal to css @media
-// const browserWidth = window.visualViewport.width
-// let moveBy = 0
-// if (browserWidth > 1160) {
-//   //4 testimonial cards
-//   moveBy = 20
-// } else {
-//   //3 testimonial cards
-// }

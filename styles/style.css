@@ -353,4 +353,15 @@ body {
 
 .center {
   margin: 0 0;
+}
+
+@media (max-width: 880px) {
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    z-index: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

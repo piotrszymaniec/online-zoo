@@ -48,9 +48,11 @@ header {
       width: 16px;
       height: 16px;
 
-      .cross-icon {
-        display: none;
-      }
+    }
+
+    .cross-icon {
+      background: url(../images/icons/burger-menu-cross.svg) no-repeat;
+
     }
 
     @media (max-width: $d-bp) {
@@ -124,7 +126,7 @@ header {
   // @media (max-width: $t-bp) {
   @media (max-width: $tb-bp) {
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     padding: $t-padding;
 
