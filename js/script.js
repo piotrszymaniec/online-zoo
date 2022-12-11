@@ -36,9 +36,9 @@ function toggleMobileMenu() {
 const card = document.querySelectorAll(".testimonial-card")[0]
 const cardContainer = document.querySelector(".testimonial-cards")
 
-const cardWidth = getStyleValue(card, "width").slice(0, -2) //cut 'px' pixels - i dont check for em etc
-const cardGap = getStyleValue(cardContainer, "gap").slice(0, -2)
-const moveCardBy = Number.parseInt(cardWidth) + Number.parseInt(cardGap)
+// const cardWidth = getStyleValue(card, "width").slice(0, -2) //cut 'px' pixels - i dont check for em etc
+// const cardGap = getStyleValue(cardContainer, "gap").slice(0, -2)
+//const moveCardBy = Number.parseInt(cardWidth) + Number.parseInt(cardGap)
 
 function moveCards(e) {
   const current = e.target.value
@@ -47,7 +47,9 @@ function moveCards(e) {
 }
 
 const slider = document.querySelector('.testimonial-slider>input');
-slider.addEventListener('input', moveCards)
+if (slider) {
+  slider.addEventListener('input', moveCards)
+}
 
 //!!! important to be equal to css @media
 // const browserWidth = window.visualViewport.width
