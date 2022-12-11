@@ -110,9 +110,9 @@ $desktop_middle_bp: 1160px;
 
 @media (max-width: $tb-bp) {
   .overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     background-color: rgb(0 0 0 / 70%);
     top: 0;
     z-index: 1;
