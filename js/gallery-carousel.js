@@ -49,16 +49,10 @@ const petsCardsData = [
   },
 ]
 
-
-
-function createCard(dataItem) {
+function setCardHTMLContent(dataItem) {
   console.log(dataItem)
-  const { name = 2, description, food, image } = dataItem
-
-  const item = document.createElement('div');
-  item.classList.add('pet-card')
-  item.innerHTML = `<div class="pet-card">
-            <div class="card-image">
+  const { name, description, food, image } = dataItem
+  return `<div class="card-image">
               <img src="${image}" alt="${name}">
             </div>
             <div class="card-footer">
@@ -72,8 +66,7 @@ function createCard(dataItem) {
                 <img src="./images/icons/pet-food-${food}.svg" alt="banana">
               </div>
             </div>
-          </div> `
-  return item
+          `;
 }
 
 function createSet(quantity, dataArray) {
@@ -85,32 +78,10 @@ function createSet(quantity, dataArray) {
   return Array.from(_set)
 }
 
-//make 4/6 call
-const cardDeckHtmlElements = createSet(6, petsCardsData).map(dataItem => createCard(dataItem))
-
-const rowsNodes = document.querySelectorAll('.cards-container .cards-row')
-
-function createNewGallery(parentRow1, parentRow2, elementsUniqueArray) {
-  elementsUniqueArray
-    .forEach((element, index) => {
-      if (index % 2 == 0) {
-        parentRow1.append(element)
-      } else {
-        parentRow2.append(element)
-      }
-    });
-}
-
-// createNewGallery(rowsNodes[0], rowsNodes[1], cardDeckHtmlElements)
-
-
-//dodaj karty do rows w kontenerach rzeby mozna bylo przesuwac karty jak w testimonial
-//a co z destroyem (Жахн)
-document.querySelector('#card-container-1')
-document.querySelector('#card-container-2')
-
 document.querySelector('.cards-nav-left').addEventListener('click', (e) => {
   console.log('left-click')
+  // changeCards()
+  changeCardImages()
   //block clicking for x sec
   //this el set attribute to disabled
   //addcards
@@ -120,6 +91,9 @@ document.querySelector('.cards-nav-left').addEventListener('click', (e) => {
 })
 document.querySelector('.cards-nav-right').addEventListener('click', (e) => {
   console.log('right-click')
+  // changeCards()
+  changeCardImages()
+
   //block clicking for x sec
   //this el set attribute to disabled
   //addcards
@@ -129,20 +103,18 @@ document.querySelector('.cards-nav-right').addEventListener('click', (e) => {
 })
 
 
+function changeCards() {
+  const cardQuantity = matchMedia("(max-width:1000px)").matches ? 4 : 6;
+  const set = createSet(cardQuantity, petsCardsData)
+  document.querySelectorAll('.pet-card').forEach((card, idx) => {
+    card.innerHTML = setCardHTMLContent(set[idx])
+  })
+}
 
-// import Control from "./common/control";
-//clicking button calls a function
-
-// class CardView extends Control {
-//   constructor(parentEl) {
-//     super(parentEl, 'div', 'pet-card')
-//   }
-// }
-
-// class CarouselView extends Control {
-//   constructor(parentEl) {
-//     super(parentEl, 'div', 'cards-container')
-//   }
-
-// }
-//
+function changeCardImages() {
+  const cardQuantity = matchMedia("(max-width:1000px)").matches ? 4 : 6;
+  const set = createSet(cardQuantity, petsCardsData)
+  document.querySelectorAll('.card-image img').forEach((img, idx) => {
+    img.setAttribute('src', set[idx].image)
+  })
+}

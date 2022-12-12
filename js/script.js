@@ -52,4 +52,10 @@ const slider = document.querySelector('.testimonial-slider>input');
 if (slider) {
   slider.addEventListener('input', moveCards)
 }
+const cards = document.querySelectorAll(".testimonial-card")
+cards.forEach(el => el.addEventListener('click', (e) => {
+
+  console.log('popup')
+  console.log(e.target.innerHTML)
+}))
 
